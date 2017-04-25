@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <link rel="stylesheet" href="/stylesheets/confirmArea.css">
+  <title>万达主题娱乐中央预定系统</title>
+</head>
+<body>
+<section class="headInfo">
+  <div class="myOrder">
+    <img src="images/peo_02.png" alt="我的订单">
+    <span>我的订单</span>
+  </div>
+  <div class="phone">
+    <img src="images/headerIphoneIcon.png" alt="phoneLog" class="phoneImg">
+    <img src="images/headerIphone_950.png" alt="phoneNumber" class="phoneNum">
+  </div>
+</section>
+<section class="center">
+  <nav class="nav">
+    <ul>
+      <li>&nbsp</li>
+      <li><a href="#">西双版纳</a></li>
+      <li><a href="#">长白山</a></li>
+      <li class="banner"><img src="images/bannera.png" alt="banner"></li>
+      <li><a href="#" class="nav_selected">武汉</a></li>
+      <li><a href="#">南昌</a></li>
+      <li><a href="#">合肥</a></li>
+    </ul>
+  </nav>
+  <div class="main">
+    <table class="packageInfo" align="center" border="0">
+      <thead>
+      <tr>
+        <th class="showDate">演出时间</th>
+        <th class="showName">产品名称</th>
+        <th class="ticketNumber">数量</th>
+        <th class="ticketPrice">单价</th>
+        <th class="allTicketPrice">合计</th>
+        <th class="showTicket">座位</th>
+      </tr></thead>
+      <!--<tr>-->
+      <!--<td>2015-08-30 20:15</td>-->
+      <!--<td>优待票</td>-->
+      <!--<td>1</td>-->
+      <!--<td class="singlePrice">￥320</td>-->
+      <!--<td class="totalPrice">￥320</td>-->
+      <!--<td>900区<span class="seatID">1排12座</span></td>-->
+      <!--</tr>-->
+      <!--<tr>-->
+      <!--<td>2015-08-30 20:15</td>-->
+      <!--<td>两人同行</td>-->
+      <!--<td>2</td>-->
+      <!--<td class="singlePrice">￥298</td>-->
+      <!--<td class="totalPrice">￥596</td>-->
+      <!--<td>900区<span class="seatID">1排13座.1排14座</span></td>-->
+      <!--</tr>-->
+    </table>
+    <div class="ticketGetPeople">取票人信息</div>
+    <ul class="confirmForm">
+      <li>
+        <span class="confirmFormInfo">取票人 <span class="necessary">*</span></span>
+        <input type="text" class="confirmFormInput1" placeholder="请输入取票人姓名" id="personName">
+        <span class="require">( <span class="necessary"> * </span> 必填项)</span>
+      </li>
+      <li>
+        <span class="confirmFormInfo">身份证</span>
+        <input type="text"  class="confirmFormInput1" placeholder="填写可凭身份证取票" id="personId">
+      </li>
+      <li>
+        <span class="confirmFormInfo">联系方式  <span class="necessary">*</span></span>
+        <input type="text"  class="confirmFormInput1" placeholder="请输入手机号或者Email" id="personContact">
+      </li>
+      <li>
+        <span class="confirmFormInfo">图片校验码</span>
+        <input type="text"  class="confirmFormInput2" placeholder="请输入右图校验码" id="validCheckCode">
+        <img src="images/getCaptcha.do" alt="校验码" class="identifyingCode">
+        <span class="require" id="kbq">看不清？</span>
+      </li>
+      <li>
+        <span class="confirmFormInfo">验证码</span>
+        <input type="text"   class="confirmFormInput2" placeholder="填写验证码" id="personCode">
+        <button onclick="sendValidatesMsg()">发送验证码</button>
+        <span id="codeMsg" style="color:red;font-weight: bold;font-size:12px;width:150px;margin-left:25px;"></span>
+      </li>
+      <li>
+        <span class="confirmFormInfo">订单须知</span>
+        <p class="xuzhi1">1. 订单支付成功后，系统会自动给联系人发送取票码。</p>
+        <p class="xuzhi2">2. 请持取票码到自助取票机或售票处换取纸质门票。</p>
+      </li>
+    </ul>
+  </div>
+  <div class="tiJiaoDingDan">
+    <div class="payMoney">应付金额: <span>￥896</span><button onclick="confirmToOrderCommit(this)">提交订单</button></div>
+  </div>
+</section>
+<script src="/javascripts/jquery-1.8.2.min.js"></script>
+<script src="/javascripts/jquery.session.js"></script>
+<script src="/javascripts/ticketConfirm.js"></script>
+</body>
+</html>

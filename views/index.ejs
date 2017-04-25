@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/main.css' />
+    <link rel="stylesheet" href="/stylesheets/chooseDate.css">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <section class="headInfo">
+      <div class="myOrder">
+          <img src="images/peo_02.png" alt="我的订单">
+          <span>我的订单</span>
+      </div>
+      <div class="phone">
+          <img src="images/headerIphoneIcon.png" alt="phoneLog" class="phoneImg">
+          <img src="images/headerIphone_950.png" alt="phoneNumber" class="phoneNum">
+      </div>
+  </section>
+  <section class="center">
+      <nav class="nav">
+          <ul>
+              <li>&nbsp</li>
+              <li><a href="#">西双版纳</a></li>
+              <li><a href="#">长白山</a></li>
+              <li class="banner"><img src="images/bannera.png" alt="banner"></li>
+              <li><a href="#" class="nav_selected">武汉</a></li>
+              <li><a href="#">南昌</a></li>
+              <li><a href="#">合肥</a></li>
+          </ul>
+      </nav>
+      <div class="main">
+          <div class="selectMeal">
+              <div class="menu">
+                  <div class="left_mealMenu">
+                      <ul>
+                          <li class="selected ticket">门票</li>
+                          <li class="hotel">酒店</li>
+                          <li class="card">年卡</li>
+                          <li class="voucher">兑换券</li>
+                      </ul>
+                  </div>
+
+                  <div class="right_mealMenu ticket_display" style="">
+                      <div class="right_top_mealMenu">
+                          汉秀门票
+                      </div>
+                      <div class="triangle"></div>
+                      <div class="selectDateAndTime">
+                          <form action="http://127.0.0.1:8080/process_get" method="get">
+                              <div class="selectDate">
+                                  <span>演出日期</span>
+                                  <input type="text" id="selectDate" value="2016-08-12" readonly onclick="showPerformanceDate(this)">
+                              </div>
+                              <div class="selectTime">
+                                  <span>演出时间</span>
+                                  <span class="timee">
+                                <cite class="second timeSelected">20:15</cite>
+                                <cite class="first">22:15</cite>
+                                <cite class="third">0:00</cite>
+                                <cite class="fourth">23:15</cite>
+                            </span>
+                              </div>
+                              <input type="hidden" id="idPerformance" value=" ">
+                              <input type="hidden" id="showTime" value=" ">
+                              <input type="submit" class="search" value="搜索" onclick="queryAreaList(this,0)">
+                          </form>
+                      </div>
+                  </div>
+
+                  <div class="right_mealMenu hotel_display" style="display: none;">
+                      <div class="right_top_mealMenu">
+                          酒店+门票
+                      </div>
+                      <div class="triangle"></div>
+                      <div class="selectDateAndTime">
+                          <div class="selectDate">
+                              <span>入住日期</span>
+                              <input type="text" value="2016-08-12" readonly>
+                          </div>
+                          <div class="selectDate">
+                              <span>离店日期</span>
+                              <input type="text" placeholder="(选填)请选择离店日期" readonly>
+                          </div>
+                          <div class="selectMainChar">
+                              <label for="hotelMainChar">关键字</label>
+                              <input type="text" placeholder="(选填)酒店名" id="hotelMainChar">
+                          </div>
+                          <button class="search" value="搜索">搜索</button>
+                      </div>
+                  </div>
+
+                  <div class="right_mealMenu card_display" style="display: none">
+                      <div class="right_top_mealMenu">
+                          年卡
+                      </div>
+                      <div class="triangle"></div>
+                      <div class="selectMainChar">
+                          <label for="cardMainChar">关键字</label>
+                          <input type="text" placeholder="(选填)年卡名称" id="cardMainChar">
+                      </div>
+                      <button class="search" value="搜索">搜索</button>
+                  </div>
+
+                  <div class="right_mealMenu voucher_display" style="display: none">
+                      <div class="right_top_mealMenu">
+                          兑换券
+                      </div>
+                      <div class="triangle"></div>
+                      <div class="selectMainChar">
+                          <label for="voucherMainChar">关键字</label>
+                          <input type="text" placeholder="(选填)兑换券名称" id="voucherMainChar">
+                      </div>
+                      <button class="search" value="搜索">搜索</button>
+                  </div>
+              </div>
+              <!--日期选择-->
+              <div class="calendar">
+                  <div id="showCalander"  class="time" style="display:none;"  >
+                      <div style='line-height:40px;color:#000;padding:0px;text-align:center; font-size:12px;background-color:#e60010;'>
+                          <input type='button' id="pre" onclick="changeCalander(this);" value='<'>
+                          <span></span>
+                          <input type='button' id="next" onclick="changeCalander(this);" value='>'>
+                      </div>
+                      <ul class='timehead' id="calendarHead"></ul>
+                      <ul id="calendar"></ul>
+                      <dl id="choosePer">
+                      </dl><br>
+                      <div class="tuLi">
+                          <ul>
+                              <li><img src="images/wyc.png"> &nbsp;无演出</li>
+                              <li><img src="images/spz.png"> &nbsp;售票中</li>
+                              <li><img src="images/yxz.png"> &nbsp;已选择</li>
+                              <li><img src="images/ysq.png"> &nbsp;已售罄</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+      </div>
+  </section>
+    <script src="/javascripts/jquery-1.8.2.min.js"></script>
+    <script src="/javascripts/jquery.session.js"></script>
+    <script src="/javascripts/chooseDate.js"></script>
+    <script src="/javascripts/showPerformanceDate.js"></script>
   </body>
 </html>

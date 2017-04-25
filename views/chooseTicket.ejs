@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>万达主题娱乐中央预定系统</title>
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <link rel="stylesheet" href="/stylesheets/chooseTicket.css">
+</head>
+<body>
+<section class="headInfo">
+  <div class="myOrder">
+    <img src="images/peo_02.png" alt="我的订单">
+    <span>我的订单</span>
+  </div>
+  <div class="phone">
+    <img src="images/headerIphoneIcon.png" alt="phoneLog" class="phoneImg">
+    <img src="images/headerIphone_950.png" alt="phoneNumber" class="phoneNum">
+  </div>
+</section>
+<section class="center">
+  <nav class="nav">
+    <ul>
+      <li>&nbsp</li>
+      <li><a href="#">西双版纳</a></li>
+      <li><a href="#">长白山</a></li>
+      <li class="banner"><img src="images/bannera.png" alt="banner"></li>
+      <li><a href="#" class="nav_selected">武汉</a></li>
+      <li><a href="#">南昌</a></li>
+      <li><a href="#">合肥</a></li>
+    </ul>
+  </nav>
+  <div class="main">
+    <div class="justContainer">
+      <div class="showArea">
+        <div class="area">
+          <ul class="img">
+            <li class="area1 yes1 opacity" data-areaid=""></li>
+            <li class="area2 yes2 opacity" data-areaid=""></li>
+            <li class="area3 yes3 opacity" data-areaid=""></li>
+            <li class="area4 yes4 opacity" data-areaid=""></li>
+            <li class="area5 yes5 opacity" data-areaid=""></li>
+            <li class="area6 yes6 opacity" data-areaid=""></li>
+            <li class="area7 yes7 opacity" data-areaid=""></li>
+            <li class="area8 yes8 opacity" data-areaid=""></li>
+            <li class="area9 yes9 opacity" data-areaid=""></li>
+            <li class="area10 yes10 opacity" data-areaid=""></li>
+            <li class="area11 yes11 opacity" data-areaid=""></li>
+            <li class="area12 yes12 opacity" data-areaid=""></li>
+            <li class="area13 yes13 opacity" data-areaid=""></li>
+            <li class="area14 yes14 opacity" data-areaid=""></li>
+          </ul>
+          <p class="areaHanxiu"></p>
+        </div>
+      </div>
+      <div class="orderTicketOnline" id="chooseTicket">
+        <div class="tips">在线订票</div>
+        <ul class="step_two">
+          <li class="one"><span>1.选择日期和场次</span></li>
+          <li class="two"><span>2.选择分区和票价</span></li>
+          <li class="three"><span>3.确认座位和支付</span></li>
+        </ul>
+        <p  class="justText" id="nextIsTicket">请继续选择相应的门票及数量</p>
+        <!--<div class="selectTicket">-->
+        <!--<div class="ticketKind odd">-->
+        <!--<span>汉秀D区普通票</span>-->
+        <!--<span class="taoPiaoPrice">￥100</span>-->
+        <!--</div>-->
+        <!--<div class="necessaryInfo">-->
+        <!--<p class="necessaryInfo1">-->
+        <!--<span class="info1">成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童</span>-->
+        <!--</p>-->
+        <!--<p class="necessaryInfo2">指定日期一日单次入园有效</p>-->
+        <!--</div>-->
+        <!--<div class="bottomInfo">-->
+        <!--<span class="keTui">限时可退</span>-->
+        <!--<span class="gaiQi">限时改期</span>-->
+        <!--<span class="ticketNumber">购买张数</span>-->
+        <!--<span class="del"></span>-->
+        <!--<input class="showNumber" value="0" type="text" data-price="100" data-name="汉秀D区普通票" readonly>-->
+        <!--<span class="add"></span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="selectTicket">-->
+        <!--<div class="ticketKind even">-->
+        <!--<span>汉秀D区优待票</span>-->
+        <!--<span class="taoPiaoPrice">￥200</span>-->
+        <!--</div>-->
+        <!--<div class="necessaryInfo">-->
+        <!--<p class="necessaryInfo1">-->
+        <!--<span class="info1">成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童</span>-->
+        <!--</p>-->
+        <!--<p class="necessaryInfo2">指定日期一日单次入园有效</p>-->
+        <!--</div>-->
+        <!--<div class="bottomInfo">-->
+        <!--<span class="keTui">限时可退</span>-->
+        <!--<span class="gaiQi">限时改期</span>-->
+        <!--<span class="ticketNumber">购买张数</span>-->
+        <!--<span class="del"></span>-->
+        <!--<input class="showNumber" value="0" type="text" data-price="200" data-name="汉秀D区优待票" readonly>-->
+        <!--<span class="add"></span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="selectTicket">-->
+        <!--<div class="ticketKind odd">-->
+        <!--<span>汉秀D票两人同行</span>-->
+        <!--<span class="taoPiaoPrice">￥300</span>-->
+        <!--</div>-->
+        <!--<div class="necessaryInfo">-->
+        <!--<p class="necessaryInfo1">-->
+        <!--<span class="info1">成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童</span>-->
+        <!--</p>-->
+        <!--<p class="necessaryInfo2">指定日期一日单次入园有效</p>-->
+        <!--</div>-->
+        <!--<div class="bottomInfo">-->
+        <!--<span class="keTui">限时可退</span>-->
+        <!--<span class="gaiQi">限时改期</span>-->
+        <!--<span class="ticketNumber">购买张数</span>-->
+        <!--<span class="del"></span>-->
+        <!--<input class="showNumber" value="0" type="text" data-name="汉秀D票两人同行" data-price="300" readonly>-->
+        <!--<span class="add"></span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="selectTicket">-->
+        <!--<div class="ticketKind even">-->
+        <!--<span>汉秀D区套票</span>-->
+        <!--<span class="taoPiaoPrice">￥400</span>-->
+        <!--</div>-->
+        <!--<div class="necessaryInfo">-->
+        <!--<p class="necessaryInfo1">-->
+        <!--<span class="info1">成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童成人及1.1米以上儿童</span>-->
+        <!--</p>-->
+        <!--<p class="necessaryInfo2">指定日期一日单次入园有效</p>-->
+        <!--</div>-->
+        <!--<div class="bottomInfo">-->
+        <!--<span class="keTui">限时可退</span>-->
+        <!--<span class="gaiQi">限时改期</span>-->
+        <!--<span class="ticketNumber">购买张数</span>-->
+        <!--<span class="del"></span>-->
+        <!--<input class="showNumber" value="0" type="text" data-name="汉秀D区套票" data-price="400" readonly>-->
+        <!--<span class="add"></span>-->
+        <!--</div>-->
+        <!--</div>-->
+      </div>
+      <div class="orderTicketOnline" id="chooseSeat">
+        <div class="tips">在线订票</div>
+        <ul class="step_three">
+          <li class="one"><span>1.选择日期和场次</span></li>
+          <li class="two"><span>2.选择分区和票价</span></li>
+          <li class="three"><span>3.确认座位和支付</span></li>
+        </ul>
+        <p class="justText2">您已经选购<span id="selectedNum">3</span>张演出票，请在下图选择相应数量的座位</p>
+        <!--  -->
+        <p class="seatInfo">
+          <span class="firstKind">可选</span>
+          <span class="secondKind">已选</span>
+          <span class="thirdKind">已售</span>
+        </p>
+        <p class="stage"></p>
+        <div class="justChooseSeat">
+          <div class="leftSeatMap">
+            <ul id="pingmu_bian_1">
+
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+
+            </ul>
+          </div>
+          <div class="rightSeatMap">
+            <ul id="pingmu_bian">
+              <li data-row="1">
+                <p class="yishou" data-chair="3" data-col="1"></p>
+                <p class="yishou" data-chair="3" data-col="2"></p>
+                <p class="yishou" data-chair="3" data-col="3"></p>
+                <p class="yishou" data-chair="3" data-col="4"></p>
+                <p class="yishou" data-chair="3" data-col="5"></p>
+                <p class="yishou" data-chair="3" data-col="6"></p>
+                <p class="yishou" data-chair="3" data-col="7"></p>
+                <p class="yishou" data-chair="3" data-col="8"></p>
+                <p class="yishou" data-chair="3" data-col="9"></p>
+                <p class="yishou" data-chair="3" data-col="10"></p>
+                <p class="yishou" data-chair="3" data-col="11"></p>
+                <p class="yishou" data-chair="1" data-col="12"></p>
+                <p class="yishou" data-chair="1" data-col="13"></p>
+                <p class="yishou" data-chair="1" data-col="14"></p>
+                <p class="yishou" data-chair="1" data-col="15"></p>
+                <p class="yishou" data-chair="3" data-col="16"></p>
+                <p class="yishou" data-chair="3" data-col="17"></p>
+                <p class="yishou" data-chair="3" data-col="18"></p>
+                <p class="yishou" data-chair="3" data-col="19"></p>
+                <p class="yishou" data-chair="3" data-col="20"></p>
+              </li>
+              <li data-row="2">
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+                <p class="kexuan" data-chair="1"></p>
+              </li>
+              <li data-row="3">
+                <p class="yixuan" ata-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+                <p class="yixuan" data-chair="1"></p>
+              </li>
+              <li data-row="4">
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+              <li data-row="5">
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+              <li data-row="6">
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+              <li data-row="7">
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+              <li data-row="8">
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+              <li data-row="9">
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+              <li>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+              <li>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+              <li>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+              <li>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+                <p data-chair="1"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="ticketInfo">
+      <div class="tips">订票信息</div>
+      <div class="justSolid">
+        <div class="red"></div>
+        <div class="grey"></div>
+      </div>
+      <div class="info">
+        <p class="timeTitle backgroundTime">演出时间</p>
+        <p class="time">2016-08-30 20:15</p>
+      </div>
+      <div class="info">
+        <p class="timeTitle backgroundArea">所选区域</p>
+        <p class="time" id="littleArea1">D2</p>
+      </div>
+      <div class="info">
+        <p class="timeTitle backgroundTicket justMarginBottom">已选门票</p>
+        <div class="ticketSelected" id="ticketSelected">
+          <!--<p class="detailed">-->
+          <!--<span class="sTicketName">汉秀D区普通票</span>-->
+          <!--<span class="justFontStyle"> x 2</span>-->
+          <!--<span class="price"><span class="univalence">￥219</span> / 张</span>-->
+          <!--</p>-->
+        </div>
+        <p class="detailed2">总计金额 <span class="price"><span class="univalence" id="allPrice">￥0.00</span></span></p>
+      </div>
+      <div class="info" style="border-bottom: none;">
+        <p class="timeTitle backgroundSeat">已选座位</p>
+        <div class="ticketSelected">
+          <ul class="selectedSeats">
+            <li class="noSeat">未选座位</li>
+            <li class="noSeat">未选座位</li>
+            <li class="noSeat">未选座位</li>
+            <li class="noSeat">未选座位</li>
+            <li class="noSeat">未选座位</li>
+            <li class="noSeat">未选座位</li>
+            <li class="noSeat">未选座位</li>
+            <li class="noSeat">未选座位</li>
+            <li class="noSeat">未选座位</li>
+          </ul>
+          <button id="selectSeat">去选座</button>
+          <button id="confirmSeat" style="display: none;" onclick="submit(this);">确认选座</button>
+        </div>
+      </div>
+      <!--右下角小图-->
+      <div class="info" id="preView" style="border-bottom: none;">
+        <p class="timeTitle">分区示意图 点击查看</p>
+        <ul class="littleArea">
+          <li class="littleArea1 opacity" data-areaid="35"></li>
+          <li class="littleArea2 opacity" data-areaid="36"></li>
+          <li class="littleArea3 opacity" data-areaid="37"></li>
+          <li class="littleArea4 opacity" data-areaid="38"></li>
+          <li class="littleArea5 opacity" data-areaid="39"></li>
+          <li class="littleArea6 opacity" data-areaid="40"></li>
+          <li class="littleArea7 opacity" data-areaid="41"></li>
+          <li class="littleArea8 opacity" data-areaid="42"></li>
+          <li class="littleArea9 opacity" data-areaid="43"></li>
+          <li class="littleArea10 opacity" data-areaid="44"></li>
+          <li class="littleArea11 opacity" data-areaid="45"></li>
+          <li class="littleArea12 opacity" data-areaid="46"></li>
+          <li class="littleArea13 opacity" data-areaid="47"></li>
+          <li class="littleArea14 opacity" data-areaid="48"></li>
+        </ul>
+        <p class="littleAreaHanxiu"></p>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="tiJiaoDingDan">
+    <div class="payMoney">应付金额：<span>￥0.00</span></div>
+  </div>
+</section>
+<script src="/javascripts/jquery-1.8.2.min.js"></script>
+<script src="/javascripts/jquery.session.js"></script>
+<script src="/javascripts/chooseTicket.js"></script>
+</body>
+</html>

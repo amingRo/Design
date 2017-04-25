@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <link rel="stylesheet" href="/stylesheets/paySuccess.css">
+  <title>万达主题娱乐中央预定系统</title>
+  <script src="/javascripts/jquery-1.8.2.min.js"></script>
+  <script src="/javascripts/jquery.session.js"></script>
+  <script src="/javascripts/paySuccess.js"></script>
+</head>
+<body>
+<section class="headInfo">
+  <div class="myOrder">
+    <img src="images/peo_02.png" alt="我的订单">
+    <span>我的订单</span>
+  </div>
+  <div class="phone">
+    <img src="images/headerIphoneIcon.png" alt="phoneLog" class="phoneImg">
+    <img src="images/headerIphone_950.png" alt="phoneNumber" class="phoneNum">
+  </div>
+</section>
+<section class="center">
+  <nav class="nav">
+    <ul>
+      <li>&nbsp</li>
+      <li><a href="#">西双版纳</a></li>
+      <li><a href="#">长白山</a></li>
+      <li class="banner"><img src="images/bannera.png" alt="banner"></li>
+      <li><a href="#" class="nav_selected">武汉</a></li>
+      <li><a href="#">南昌</a></li>
+      <li><a href="#">合肥</a></li>
+    </ul>
+  </nav>
+  <div class="main">
+    <div class="transactionAlerts">
+      <span class="countdown"></span>
+      <span class="prompt">座位将在倒计时结束后释放，请尽快完成交易</span>
+    </div>
+    <p class="orderNumber">订单编号:<span class="number">201605261510462674</span></p>
+    <table class="packageInfo" align="center" border="0">
+      <thead>
+      <tr>
+        <th class="showDate">演出时间</th>
+        <th class="showName">产品名称</th>
+        <th class="ticketNumber">数量</th>
+        <th class="ticketPrice">单价</th>
+        <th class="allTicketPrice">合计</th>
+        <th class="showTicket">座位</th>
+      </tr></thead>
+      <!--<tr>-->
+      <!--<td>2015-08-30 <span class="showTime">20:15</span></td>-->
+      <!--<td>优待票</td>-->
+      <!--<td>1</td>-->
+      <!--<td class="singlePrice">￥320</td>-->
+      <!--<td class="totalPrice">￥320</td>-->
+      <!--<td>900区<span class="seatID">1排12座</span></td>-->
+      <!--</tr>-->
+      <!--<tr>-->
+      <!--<td>2015-08-30 <span class="showTime">20:15</span></td>-->
+      <!--<td>两人同行</td>-->
+      <!--<td>2</td>-->
+      <!--<td class="singlePrice">￥298</td>-->
+      <!--<td class="totalPrice">￥596</td>-->
+      <!--<td>900区<span class="seatID">1排13座.1排14座</span></td>-->
+      <!--</tr>-->
+    </table>
+    <p class="amount">总计金额 <span>￥960</span></p>
+    <!--<p class="preferential">优惠码 <span class="count">共使用 <span class="numFont">1</span>个优惠码</span>-->
+    <!--<span class="right"><span class="reduceFont">减</span>￥20</span>-->
+    <!--</p>-->
+    <!--<p class="preferential">兑换券 <span class="count">共使用 <span class="numFont">1</span>个兑换券</span>-->
+    <!--<span class="right"><span class="reduceFont">减</span>￥20</span>-->
+    <!--</p>-->
+    <p class="amount">应付金额 <span>￥960</span></p>
+    <div class="payMethod">
+      <p class="payMethodPrompt1">支付平台 <span class="payMethodPrompt2">支持微信支付、支付宝、快钱等多种支付方式。</span></p>
+      <div class="method">
+        <!--<button class="zhiFuBao methodSelected"></button>-->
+        <!--<button class="weiXin"></button>-->
+        <!--<button class="kuaiQian"></button>-->
+        <ul>
+          <li class="zhiFuBao methodSelected pointer"></li>
+          <li class="weiXin pointer"></li>
+          <li class="kuaiQian pointer"></li>
+        </ul>
+      </div>
+      <p class="fastPay">快捷支付 <span class="payMethodPrompt2">支持微信支付、支付宝、快钱等多种支付方式。</span>
+        <img src="images/button_top.png" alt="" class="jianTou">
+      </p>
+      <ul class="bankList">
+        <li class="pointer" data-name="FDB"><img src="images/images/fz.png" alt=""></li>
+        <li class="pointer"  data-name="HZCBB2C"><img src="images/images/hz.png" alt=""></li>
+        <li class="pointer"  data-name="GDB"><img src="images/images/gf.png" alt=""></li>
+        <li class="pointer"  data-name="ICBCB2C"><img src="images/images/gs.png" alt=""></li>
+        <li class="pointer"  data-name="CCB"><img src="images/images/js.png" alt=""></li>
+        <li class="pointer"  data-name="NBBANK"><img src="images/images/nb.png" alt=""></li>
+        <li class="pointer"  data-name="ABC"><img src="images/images/ny.png" alt=""></li>
+        <li class="pointer"  data-name="SPABANK"><img src="images/images/pa.png" alt=""></li>
+        <li class="pointer"  data-name="SPDB"><img src="images/images/pf.png" alt=""></li>
+        <li class="pointer"  data-name="SHBANK"><img src="images/images/sh.png" alt=""></li>
+        <li class="pointer"  data-name="CIB"><img src="images/images/xy.png" alt=""></li>
+        <li class="pointer"  data-name="POSTGC"><img src="images/images/yz.png" alt=""></li>
+        <li class="pointer"  data-name="BOCB2C"><img src="images/images/zg.png" alt=""></li>
+        <li class="pointer"  data-name="CMB" class="hello"><img src="images/images/zs.png" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <div class="tiJiaoDingDan">
+    <div class="payMoney">应付金额：<i> ￥  <span id="yingfujine" class="yingfujine">768.00</span></i>
+      <button onclick="orderPayes()" id="submitBtn" style="cursor:pointer; " type="button">去支付</button>
+    </div>
+  </div>
+</section>
+</body>
+</html>
