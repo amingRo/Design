@@ -1,0 +1,198 @@
+@charset "utf-8";
+.main {
+  width: 1000px;
+  margin: 50px auto;
+  min-height: 800px;
+  background-color: #313031;
+}
+table.packageInfo {
+  border-top: 1px solid #e60010;
+  border-spacing: 0;
+  color: #ffffff;
+  width: 960px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+}
+.singlePrice,.totalPrice{
+  color: #c1a643;
+}
+table.packageInfo th {
+  font-size: 16px;
+  font-weight: normal;
+  background-color: #232425;
+}
+table.packageInfo th.showDate {
+  width: 164px;
+}
+table.packageInfo th.showName {
+  width: 190px;
+}
+table.packageInfo th.ticketNumber {
+  width: 94px;
+}
+table.packageInfo th.ticketPrice {
+  width: 100px;
+}
+table.packageInfo th.allTicketPrice {
+  width: 100px;
+}
+table.packageInfo td {
+  font-size: 16px;
+  background-color: #5c5c5c;
+}
+table.packageInfo td span {
+  font-size: 16px;
+}
+.ticketGetPeople {
+  margin: 20px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px 0 5px 10px;
+  border-left: 6px solid #e60010;
+}
+ul.confirmForm {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 10px 0 10px 280px;
+  width: 700px;
+  list-style: none;
+}
+ul.confirmForm li {
+  line-height: 60px;
+}
+ul.confirmForm span.confirmFormInfo {
+  display: inline-block;
+  width: 100px;
+  font-size: 16px;
+}
+ul.confirmForm li > input {
+  height: 25px;
+  border: 1px solid #5c5c5c;
+  background-color: #232425;
+}
+ul.confirmForm li > input.confirmFormInput1 {
+  width: 300px;
+  padding-left: 8px;
+  color: white;
+}
+ul.confirmForm li > input.confirmFormInput2 {
+  width: 200px;
+  padding-left: 8px;
+  color: white;
+}
+ul.confirmForm .necessary {
+  color: #FD6827;
+}
+ul.confirmForm .require {
+  font-size: 16px;
+  margin-left: 25px;
+}
+ul.confirmForm .identifyingCode {
+  width: 75px;
+  margin-left: 20px;
+  height: 25px;
+  position: relative;
+  top: 8px;
+}
+ul.confirmForm button {
+  margin-left: 20px;
+  height: 25px;
+  width: 75px;
+  background-color: #ffaf00;
+  color: #ffffff;
+  font-size: 14px;
+}
+ul.confirmForm p {
+  line-height: 20px;
+}
+ul.confirmForm .xuzhi1 {
+  display: inline-block;
+}
+ul.confirmForm .xuzhi2 {
+  margin-left: 105px;
+}
+ul.confirmForm li:last-child {
+  margin-top: 25px;
+}
+.preferentialCode {
+  margin-left: 200px;
+  margin-right: 100px;
+  border-top: 1px solid #5c5c5c;
+}
+.preferentialCode span {
+  font-size: 16px;
+}
+.addCode {
+  line-height: 20px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+.addCode > img {
+  margin-left: 590px;
+  cursor: pointer;
+}
+.writeCode {
+  margin: 20px 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #5c5c5c;
+}
+.writeCode input {
+  height: 30px;
+  border-top: 1px solid #5c5c5c;
+  border-left: 1px solid #5c5c5c;
+  border-bottom: 1px solid #5c5c5c;
+  background-color: #232425;
+  width: 270px;
+}
+.writeCode button {
+  background-color: #ffaf00;
+  height: 32px;
+  position: relative;
+  left: -5px;
+  width: 60px;
+  color: #ffffff;
+}
+.writeCode .addImg,
+.writeCode .delImg {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+}
+.writeCode .delMoney {
+  margin-left: 100px;
+  color: #5c5c5c;
+}
+.writeCode .money {
+  color: #ffaf00;
+}
+.tiJiaoDingDan {
+  position: fixed;
+  bottom: 0;
+  line-height: 60px;
+  width: 100%;
+  background-color: rgba(40, 36, 35, 0.9);
+}
+.tiJiaoDingDan .payMoney {
+  margin-left: 900px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.tiJiaoDingDan .payMoney span {
+  position: relative;
+  bottom: -1px;
+  font-size: 24px;
+  color: #ffaf00;
+}
+.tiJiaoDingDan button {
+  display: inline-block;
+  margin-left: 50px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #e60010;
+  color: #ffffff;
+}
+#kbq{
+  cursor: pointer;
+}

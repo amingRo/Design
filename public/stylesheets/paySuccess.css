@@ -1,0 +1,242 @@
+@charset "utf-8";
+.main {
+  width: 1000px;
+  margin: 30px auto 60px auto;
+  min-height: 645px;
+  background-color: #313031;
+}
+div.transactionAlerts {
+  position: relative;
+  top: -8px;
+  padding-top: 40px;
+  text-align: center;
+  color: #ffffff;
+  right: 260px;
+}
+div.transactionAlerts .countdown {
+  display: inline-block;
+  width: 100px;
+  background-color: #e60010;
+  line-height: 35px;
+  border-radius: 17px;
+  font-size: 17px;
+}
+div.transactionAlerts .prompt {
+  margin-left: 10px;
+  font-size: 15px;
+}
+.orderNumber {
+  margin: 20px 20px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.orderNumber span {
+  font-size: 14px;
+  color: #FEB101;
+}
+p {
+  margin: 20px 20px;
+}
+.amount {
+  color: #ffffff;
+  font-size: 14px;
+}
+.amount span {
+  float: right;
+  color: #c1a643;
+  font-size: 16px;
+}
+.preferential {
+  color: #ffffff;
+  font-size: 14px;
+}
+.preferential .count {
+  margin-left: 40px;
+  color: #828282;
+}
+.preferential .numFont {
+  color: #e60010;
+}
+.preferential .right {
+  float: right;
+  color: #c1a643;
+  font-size: 16px;
+}
+.preferential .reduceFont {
+  display: inline-block;
+  background-color: #0ec4d9;
+  width: 18px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
+  line-height: 17px;
+  position: relative;
+  top: -1px;
+}
+table.packageInfo {
+  border-top: 1px solid #e60010;
+  border-spacing: 0;
+  color: #ffffff;
+  width: 960px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+}
+table.packageInfo th {
+  font-size: 16px;
+  font-weight: normal;
+  background-color: #232425;
+}
+table.packageInfo th.showDate {
+  width: 164px;
+}
+table.packageInfo th.showName {
+  width: 190px;
+}
+table.packageInfo th.ticketNumber {
+  width: 94px;
+}
+table.packageInfo th.ticketPrice {
+  width: 100px;
+}
+table.packageInfo th.allTicketPrice {
+  width: 100px;
+}
+table.packageInfo td {
+  font-size: 16px;
+  background-color: #5c5c5c;
+}
+table.packageInfo td span {
+  font-size: 16px;
+}
+.payMethod {
+  padding-top: 35px;
+  border-top: 1px dashed #918c8c;
+  margin: 0 20px;
+}
+.payMethod .payMethodPrompt1 {
+  background-color: #272727;
+  margin: 0;
+  color: #ffffff;
+  padding: 30px;
+  font-size: 20px;
+}
+.payMethod .payMethodPrompt1 span {
+  margin-left: 15px;
+  color: #828282;
+}
+.payMethod .method {
+  background-color: #272727;
+  padding-bottom: 35px;
+  height: 56px;
+}
+.payMethod .method li {
+  border: 2px solid #5f5e5f;
+  width: 135px;
+  height: 44px;
+  margin-left: 25px;
+  list-style: none;
+  float: left;
+}
+.payMethod .method li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.payMethod .method .zhiFuBao {
+  padding-top: 5px;
+  background: url("../images/payMethod.png") no-repeat -12px -14px;
+  background-origin: content-box;
+  padding-left: 12px;
+}
+.payMethod .method .weiXin {
+  padding: 5px 9px 0 5px;
+  background: url("../images/payMethod.png") no-repeat -157px -16px;
+  background-origin: content-box;
+}
+.payMethod .method .kuaiQian {
+  padding-top: 5px;
+  background: url("../images/payMethod.png") no-repeat -20px -87px;
+  background-origin: content-box;
+  padding-left: 34px;
+  width: 113px;
+}
+.payMethod .method .methodSelected {
+  border-color: #e60010;
+}
+.fastPay {
+  margin: 0;
+  color: #ffffff;
+  padding: 30px;
+  font-size: 20px;
+}
+.fastPay span {
+  margin-left: 15px;
+  color: #828282;
+}
+.fastPay img {
+  margin-left: 526px;
+  cursor: pointer;
+}
+.bankList {
+  height: 250px;
+  display: none;
+}
+.bankList li {
+  list-style: none;
+  float: left;
+  margin: 12px 22px;
+  /*border: 2px solid #5f5e5f;*/
+}
+.protocol {
+  position: absolute;
+  top: 0px;
+  left: 196px;
+  color: #ffaf01;
+  margin: 0;
+  text-decoration: underline;
+}
+.protocol input {
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+.tiJiaoDingDan {
+  position: fixed;
+  bottom: 0;
+  line-height: 52px;
+  width: 77%;
+  padding:0 13%;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top:1px solid #e60012;
+}
+.tiJiaoDingDan .payMoney {
+  margin-left: 56%;
+  font-size: 16px;
+  color: #ffffff;
+  width:400px;
+  text-align:right;
+}
+.tiJiaoDingDan .payMoney i{
+  color:#c1a643;
+  font-size: 20px;
+  position:relative;
+  top:1px;
+}
+.tiJiaoDingDan .payMoney span {
+  position: relative;
+  bottom: -3px;
+  font-size: 24px;
+  color: #c1a643;
+}
+.tiJiaoDingDan button {
+  display: inline-block;
+  margin-left: 50px;
+  width: 100px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: #e60010;
+  color: #ffffff;
+  cursor: pointer;
+  font-size:14px;
+}

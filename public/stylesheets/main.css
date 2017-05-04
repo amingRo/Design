@@ -1,0 +1,180 @@
+@charset "utf-8";
+.clearFix {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*通用选择器*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 12px;
+  font-family: 微软雅黑,"Microsoft YaHei";
+  font-style: normal;
+}
+article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+body {
+  min-width: 1000px;
+  margin: 0 auto;
+  background-color: #000;
+}
+/*top*/
+.headInfo {
+  height: 50px;
+  width: 1000px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.headInfo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.myOrder {
+  float: left;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.myOrder span {
+  font-size: 15px;
+  vertical-align: middle;
+}
+.myOrder img {
+  margin-top: 4px;
+  vertical-align: middle;
+}
+.phone {
+  float: right;
+  margin-top: 10px;
+}
+.phone .phoneNum {
+  margin-bottom: 6px;
+}
+.phone .phoneImg{
+  -moz-animation: slidePhone 2s infinite linear;
+  -webkit-animation: slidePhone 2s infinite linear;
+  animation: slidePhone 2s infinite linear;
+}
+/*nav*/
+.nav {
+  height: 50px;
+  width: 1000px;
+  margin: 0px auto;
+  background: rgba(193, 166, 67, 0.7);
+  border-radius: 0px 0px 40px 40px;
+  position: relative;
+}
+.nav li.banner img {
+  position: relative;
+  top: -57px;
+}
+.nav li {
+  width: 140px;
+  list-style: none;
+  float: left;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.nav li:hover a {
+  color: #ffffff;
+  border-bottom: 4px solid #e40010;
+}
+.nav li a.nav_selected {
+  color: #ffffff;
+  border-bottom: 4px solid #e40010;
+}
+.nav a {
+  width: 73px;
+  display: inline-block;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  line-height: 44px;
+}
+/*center*/
+.center {
+  background-image: url(../images/bg_01.jpg);
+  height: 730px;
+}
+@-moz-keyframes slidePhone {
+  0% {
+    -moz-transform:rotate(30deg);
+    transform:rotate(30deg);
+  }
+  5% {
+    -moz-transform:rotate(0deg);
+    transform:rotate(0deg);
+  }
+  10% {
+    -moz-transform:rotate(30deg);
+    transform:rotate(30deg);
+  }
+  15% {
+    -moz-transform:rotate(0deg);
+    transform:rotate(0deg);
+  }
+}
+
+@-webkit-keyframes slidePhone {
+  0% {
+    -webkit-transform:rotate(30deg);
+    transform:rotate(30deg);
+  }
+  5% {
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+  }
+  10% {
+    -webkit-transform:rotate(30deg);
+    transform:rotate(30deg);
+  }
+  15% {
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+  }
+}
+
+@keyframes slidePhone {
+  0% {
+    -moz-transform:rotate(30deg);
+    -ms-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    transform:rotate(30deg);
+  }
+  5% {
+    -moz-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+  }
+  10% {
+    -moz-transform:rotate(30deg);
+    -ms-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    transform:rotate(30deg);
+  }
+  15% {
+    -moz-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+  }
+}
+.pointer{
+  cursor: pointer;
+}

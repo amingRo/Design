@@ -1,0 +1,844 @@
+@charset "utf-8";
+.main {
+  width: 1000px;
+  margin: 30px auto;
+  position: relative;
+  top: -45px;
+}
+/*左半部分   在线订票*/
+.orderTicketOnline {
+  /*提示信息*/
+  float: left;
+  width: 650px;
+  background: rgba(40, 36, 35, 0.9);
+  /*第二步*/
+}
+.orderTicketOnline .tips {
+  background: url("../images/icon_now.png") no-repeat left center;
+  margin: 10px 0 0 20px;
+  padding-left: 30px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.orderTicketOnline .step_two {
+  height: 119px;
+  background: url("../images/step3.png") no-repeat 0 -138px;
+  background-size: 636px;
+  list-style: none;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 7px;
+}
+.orderTicketOnline .step_two li {
+  float: left;
+  width: 214px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  padding-top: 90px;
+}
+.orderTicketOnline .step_two li span {
+  font-size: 15px;
+}
+.orderTicketOnline .step_two li:first-child {
+  position: relative;
+  left: -10px;
+}
+.orderTicketOnline .step_two li:last-child {
+  position: relative;
+  left: 9px;
+}
+.orderTicketOnline .step_two .one {
+  cursor: pointer;
+}
+.orderTicketOnline p.justText {
+  color: #fff;
+  line-height: 50px;
+  font-size: 15px;
+  margin: 0 30px;
+}
+.orderTicketOnline .selectTicket {
+  background-color: rgba(49, 49, 49, 0.8);
+  height: 160px;
+  border: 1px solid #959595;
+  margin: 0 30px 20px 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.orderTicketOnline .selectTicket .ticketKind {
+  line-height: 43px;
+  color: #ffffff;
+  padding: 0 20px;
+}
+.orderTicketOnline .selectTicket .ticketKind span {
+  font-size: 16px;
+}
+.orderTicketOnline .selectTicket .ticketKind span.taoPiaoPrice {
+  float: right;
+}
+.orderTicketOnline .necessaryInfo {
+  height: 70px;
+  border-bottom: 1px dashed #795a27;
+}
+.orderTicketOnline .necessaryInfo .necessaryInfo1 {
+  padding: 15px 20px 12px 20px;
+  color: #aaaaaa;
+  line-height: 13px;
+}
+.orderTicketOnline .necessaryInfo .necessaryInfo1 span.info1 {
+  font-size: 14px;
+  display: inline-block;
+  width: 550px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.orderTicketOnline .necessaryInfo .necessaryInfo2 {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 13px;
+  padding: 0 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.orderTicketOnline .bottomInfo {
+  color: #ffffff;
+  line-height: 45px;
+  margin: 0 20px;
+}
+.orderTicketOnline .bottomInfo span {
+  color: #aaaaaa;
+}
+.orderTicketOnline .bottomInfo span.info3 {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.orderTicketOnline .bottomInfo span.keTui {
+  padding-left: 20px;
+  background: url("../images/right_+_-.png") no-repeat -10px -14px;
+}
+.orderTicketOnline .bottomInfo span.gaiQi {
+  padding-left: 20px;
+  background: url("../images/right_+_-.png") no-repeat -10px -14px;
+  margin-left: 15px;
+}
+.orderTicketOnline .bottomInfo span.ticketNumber {
+  margin-left: 206px;
+  font-size: 14px;
+}
+.orderTicketOnline .bottomInfo span.del {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  border: 1px solid #959595;
+  background: url("../images/right_+_-.png") no-repeat -55px -8px;
+  vertical-align: middle;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.orderTicketOnline .bottomInfo input.showNumber {
+  display: inline-block;
+  width: 35px;
+  line-height: 30px;
+  border-top: 1px solid #959595;
+  border-bottom: 1px solid #959595;
+  background: #000000;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 18px;
+  margin-left: -4px;
+  color: #ffffff;
+}
+.orderTicketOnline .bottomInfo span.add {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  border: 1px solid #959595;
+  background: url("../images/right_+_-.png") no-repeat -100px -8px;
+  /*margin-left: -4px;*/
+  vertical-align: middle;
+  cursor: pointer;
+}
+.ticketInfo .ticketSelected {
+  margin-left: 24px;
+}
+.ticketInfo .detailed .sTicketName {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 0 13px 0;
+  display: inline-block;
+  color:#d0d0d0;
+}
+.ticketInfo .detailed .price {
+  float: right;
+  font-size: 14px;
+  white-space: nowrap;
+  color: #d0d0d0;
+}
+.ticketInfo .detailed .price .univalence {
+  font-size: 14px;
+  color: #c1a643;
+}
+.ticketInfo .justFontStyle {
+  font-size: 16px;
+  color: #c1a643;
+}
+.ticketInfo .selectedSeats {
+  list-style: none;
+  margin: 10px 0;
+}
+.ticketInfo .selectedSeats:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.ticketInfo .selectedSeats li {
+  float: left;
+  width: 82px;
+  line-height: 36px;
+  margin: 4px;
+  text-align: center;
+}
+.ticketInfo .selectedSeats li.noSeat {
+  border: 1px dashed #aaaaaa;
+  color: #a09f9f;
+}
+.ticketInfo .littleArea {
+  height: 242px;
+  list-style: none;
+}
+.ticketInfo .littleArea li {
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+}
+.ticketInfo .littleArea li.opacity {
+  opacity: 0.3;
+}
+.ticketInfo .littleArea li.littleArea1 {
+  background: url("../images/b1.png") no-repeat;
+  width: 66px;
+  height: 60px;
+  left: 34px;
+  top: 45px;
+  background-size:57px;
+}
+.ticketInfo .littleArea li.littleArea2 {
+  background: url("../images/b4.png") no-repeat;
+  width: 59px;
+  height: 38px;
+  left: 20px;
+  top: 165px;
+  background-size:60px;
+
+}
+.ticketInfo .littleArea li.littleArea3 {
+  background: url("../images/b3.png") no-repeat;
+  width: 69px;
+  height: 40px;
+  left: 56px;
+  top: 133px;
+  background-size:65px;
+}
+.ticketInfo .littleArea li.littleArea4 {
+  background: url("../images/b6.png") no-repeat;
+  width: 33px;
+  height: 36px;
+  left: 125px;
+  top: 192px;
+  background-size:32px;
+}
+.ticketInfo .littleArea li.littleArea5 {
+  background: url("../images/b2.png") no-repeat;
+  width: 59px;
+  height: 40px;
+  left: 34px;
+  top: 104px;
+  background-size:60px;
+}
+.ticketInfo .littleArea li.littleArea6 {
+  background: url("../images/b7.png") no-repeat;
+  width: 34px;
+  height: 34px;
+  left: 165px;
+  top: 192px;
+  background-size:32px;
+}
+.ticketInfo .littleArea li.littleArea7 {
+  background: url("../images/b12.png") no-repeat;
+  width: 71px;
+  height: 43px;
+  left: 203px;
+  top: 133px;
+  background-size:65px;
+}
+.ticketInfo .littleArea li.littleArea8 {
+  background: url("../images/b9.png") no-repeat;
+  width: 63px;
+  height: 38px;
+  left: 244px;
+  top: 168px;
+  background-size:60px;
+}
+.ticketInfo .littleArea li.littleArea9 {
+  background: url("../images/b14.png") no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 231px;
+  top: 45px;
+  background-size:57px;
+}
+.ticketInfo .littleArea li.littleArea10 {
+  background: url("../images/b10.png") no-repeat;
+  width: 72px;
+  height: 20px;
+  left: 126px;
+  top: 144px;
+  background-size:70px;
+}
+.ticketInfo .littleArea li.littleArea11 {
+  background: url("../images/b11.png") no-repeat;
+  width: 93px;
+  height: 20px;
+  left: 115px;
+  top: 163px;
+  background-size:95px;
+}
+.ticketInfo .littleArea li.littleArea12 {
+  background: url("../images/b13.png") no-repeat;
+  width: 59px;
+  height: 40px;
+  left: 229px;
+  top: 104px;
+  background-size:60px;
+}
+.ticketInfo .littleArea li.littleArea13 {
+  background: url("../images/b5.png") no-repeat;
+  width: 60px;
+  height: 43px;
+  left: 65px;
+  top: 180px;
+  background-size:58px;
+}
+.ticketInfo .littleArea li.littleArea14 {
+  background: url("../images/b8.png") no-repeat;
+  width: 58px;
+  height: 41px;
+  left: 199px;
+  top: 181px;
+  background-size:58px;
+}
+.ticketInfo p.littleAreaHanxiu {
+  width: 127px;
+  height: 77px;
+  left: 98px;
+  top: 55px;
+  position: absolute;
+  background: url(../images/bb.png) no-repeat;
+  background-size:125px;
+}
+.ticketInfo .detailed2 {
+  border-top: 1px solid #5c5c5c;
+  font-size: 14px;
+  margin-left: 24px;
+  padding: 13px 0;
+  color:#d0d0d0;
+}
+.ticketInfo .detailed2 .price {
+  float: right;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.ticketInfo .detailed2 .price .univalence {
+  font-size: 14px;
+  color: #c1a643;
+}
+
+
+.odd {
+  background-color: #c1a643;
+}
+.even {
+  background-color: #e60010;
+}
+/*右半部分  订票信息*/
+.ticketInfo {
+  float: right;
+  width: 340px;
+  min-height: 780px;
+  background: #313031;
+  margin-left: 10px;
+}
+.ticketInfo .tips {
+  margin: 10px 0 0 20px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.ticketInfo .red {
+  height: 3px;
+  background: #e60010;
+  width: 73px;
+  margin-left: 20px;
+}
+.ticketInfo .grey {
+  height: 1px;
+  background: #494a4b;
+  margin: 0 20px;
+}
+.ticketInfo .info {
+  margin: 15px 20px 0 20px;
+  border-bottom: 1px dashed #918c8c;
+  position: relative;
+}
+.ticketInfo .timeTitle {
+  font-size: 13px;
+  color: #ffffff;
+  background-size: 17px 17px;
+  padding-left: 24px;
+}
+.ticketInfo .time {
+  padding: 10px 0 10px 24px;
+  font-size: 13px;
+  color: #c1a643;
+}
+.ticketInfo .time span {
+  margin-left: 10px;
+  font-size: 13px;
+}
+.ticketInfo .ticketSelected button {
+  border: 0;
+  width: 268px;
+  background-color: #e60010;
+  margin: 4px;
+  line-height: 35px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.justContainer {
+  width: 650px;
+  float: left;
+}
+.justMarginBottom {
+  margin-bottom: 13px;
+}
+.ticketInfo .backgroundTime {
+  background: url(../images/time_ico2.png) no-repeat left center;
+  background-size: 16px;
+}
+.ticketInfo .backgroundArea {
+  background: url("../images/areaSelected.png") no-repeat -13px -11px;
+}
+.ticketInfo .backgroundTicket {
+  background: url("../images/ticketSelected.png") no-repeat -13px -11px;
+}
+.ticketInfo .backgroundSeat {
+  background: url("../images/seatSelected1.png") no-repeat -13px -13px;
+}
+
+
+/*选座页面*/
+.orderTicketOnline .step_three {
+  height: 119px;
+  background: url("../images/step3.png") no-repeat 0 -256px;
+  background-size: 599px;
+  list-style: none;
+  overflow: hidden;
+  margin: 20px 23px 0 23px;
+}
+.orderTicketOnline .step_three li {
+  float: left;
+  width: 204px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  padding-top: 90px;
+}
+.orderTicketOnline .step_three li span {
+  font-size: 14px;
+}
+.orderTicketOnline .step_three li:first-child {
+  position: relative;
+  left: -10px;
+}
+.orderTicketOnline .step_three li:last-child {
+  width: 159px;
+  text-align: right;
+}
+.orderTicketOnline .step_three .one {
+  cursor: pointer;
+}
+.orderTicketOnline p.justText2 {
+  color: #fff;
+  line-height: 50px;
+  font-size: 14px;
+  margin: 35px 30px 10px 30px;
+  border-top: 1px dashed #918c8c;
+  padding-left: 5px;
+}
+.orderTicketOnline p.justText2 span {
+  color: #e60010;
+  font-size: 14px;
+  margin: 0 5px;
+}
+.orderTicketOnline p.seatInfo {
+  text-align: center;
+  color: #ffffff;
+}
+.orderTicketOnline p.seatInfo span {
+  font-size: 14px;
+  margin: 0 20px;
+  line-height: 15px;
+  padding-left: 20px;
+}
+.orderTicketOnline p.seatInfo .firstKind {
+  background: url("../images/kexuan.png") no-repeat 0 4px;
+  background-size:15px;
+}
+.orderTicketOnline p.seatInfo .secondKind {
+  background: url("../images/yixuan.png") no-repeat 0 4px;
+  background-size:15px;
+}
+.orderTicketOnline p.seatInfo .thirdKind {
+  background: url("../images/yishou.png") no-repeat 0 4px;
+  background-size:15px;
+}
+.orderTicketOnline .stage {
+  background: url("../images/stage.png") no-repeat center;
+  height: 70px;
+}
+.orderTicketOnline .justChooseSeat {
+  display: inline-block;
+  color: #ffffff;
+  min-height:467px;
+}
+.orderTicketOnline .justChooseSeat .leftSeatMap {
+  display: inline-block;
+  width: 30px;
+  vertical-align: top;
+}
+.orderTicketOnline .justChooseSeat .leftSeatMap ul {
+  list-style: none;
+}
+.orderTicketOnline .justChooseSeat .leftSeatMap ul li {
+  text-align: right;
+  margin-top: 4px;
+}
+.orderTicketOnline .rightSeatMap {
+  display: inline-block;
+  vertical-align: top;
+  overflow-x: auto;
+  width: 564px;
+  padding-bottom: 20px;
+}
+.orderTicketOnline .rightSeatMap ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 10px;
+}
+.orderTicketOnline .rightSeatMap ul li {
+  margin-top: 5px;
+  overflow: hidden;
+  height: 15px;
+  margin-top: 5px;
+}
+.orderTicketOnline .rightSeatMap ul li p {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+#chooseTicket {
+  display: block;
+}
+#chooseSeat {
+  display: none;
+}
+#confirmSeat {
+  display: none;
+}
+.kexuan {
+  background: url("../images/kexuan.png") no-repeat;
+  cursor: pointer;
+  background-size:13px 13px;
+}
+.yixuan {
+  background: url("../images/yixuan.png") no-repeat;
+  cursor: pointer;
+  background-size:13px 13px;
+}
+.yishou {
+  background: url("../images/yishou.png") no-repeat;
+  cursor: no-drop;
+  background-size:13px 13px;
+}
+.area{
+  top: 50px;
+}
+.showArea{
+  width: 650px;
+  height: 967px;
+  background: #313031;
+  position: absolute;
+  z-index: 999;
+  top:-1200px;
+}
+.opacity{
+  opacity: 0.2;
+}
+.state1{
+  background: #a09696;
+}
+.area {
+  position: relative;
+  top: -100px;
+}
+.area li {
+  position: absolute;
+  text-indent: 999px;
+  overflow: hidden;
+  cursor: pointer;
+}
+li.yes1 {
+  left: 44px;
+  top: 283px;
+  width: 123px;
+  height: 122px;
+  background: url("../images/b1.png") no-repeat !important;
+  cursor: pointer;
+  background-size:123px !important;
+}
+li.yes2 {
+  left: 29px;
+  top: 534px;
+  width: 125px;
+  height: 77px;
+  background: url("../images/b4.png") no-repeat !important;
+  cursor: pointer;
+  background-size:125px !important;
+}
+li.yes3 {
+  left: 104px;
+  top: 467px;
+  width: 141px;
+  height: 85px;
+  background: url("../images/b3.png") no-repeat !important;
+  cursor: pointer;
+  background-size:140px !important;
+}
+li.yes4 {
+  left: 238px;
+  top: 584px;
+  width: 70px;
+  height: 70px;
+  background: url("../images/b6.png") no-repeat !important;
+  cursor: pointer;
+  background-size:68px !important;
+}
+li.yes5 {
+  left: 60px;
+  top: 407px;
+  width: 114px;
+  height: 75px;
+  background: url("../images/b2.png") no-repeat !important;
+  background-size:114px !important;
+  cursor: pointer;
+}
+li.yes6 {
+  left: 315px;
+  top: 585px;
+  width: 70px;
+  height: 71px;
+  background: url("../images/b7.png") no-repeat !important;
+  cursor: pointer;
+  background-size:68px !important;
+}
+li.yes7 {
+  left: 384px;
+  top: 467px;
+  width: 140px;
+  height: 85px;
+  background: url("../images/b12.png") no-repeat !important;
+  cursor: pointer;
+  background-size:141px !important;
+}
+li.yes8 {
+  left: 470px;
+  top: 538px;
+  width: 125px;
+  height: 75px;
+  background: url("../images/b9.png") no-repeat !important;
+  cursor: pointer;
+  background-size:125px !important;
+}
+li.yes9 {
+  left: 454px;
+  top: 283px;
+  width: 123px;
+  height: 122px;
+  background: url("../images/b14.png") no-repeat !important;
+  cursor: pointer;
+  background-size:123px !important;
+}
+li.yes10 {
+  left: 237px;
+  top: 483px;
+  width: 149px;
+  height: 40px;
+  background: url("../images/b10.png") no-repeat !important;
+  cursor: pointer;
+  background-size:145px !important;
+}
+li.yes11 {
+  left: 215px;
+  top: 525px;
+  width: 197px;
+  height: 42px;
+  background: url("../images/b11.png") no-repeat !important;
+  cursor: pointer;
+  background-size:190px !important;
+}
+li.yes12 {
+  left: 445px;
+  top: 407px;
+  width: 114px;
+  height: 75px;
+  background: url("../images/b13.png") no-repeat !important;
+  cursor: pointer;
+  background-size:114px !important;
+}
+li.yes13 {
+  left: 114px;
+  top: 560px;
+  width: 126px;
+  height: 90px;
+  background: url("../images/b5.png") no-repeat !important;
+  cursor: pointer;
+  background-size:125px !important;
+}
+li.yes14 {
+  left: 383px;
+  top: 562px;
+  width: 127px;
+  height: 89px;
+  background: url("../images/b8.png") no-repeat !important;
+  cursor: pointer;
+  background-size:125px !important;
+}
+p.areaHanxiu {
+  left: 175px;
+  top: 296px;
+  width: 270px;
+  height: 171px;
+  cursor: auto;
+  position: absolute;
+  background: url(../images/bb.png) no-repeat;
+  overflow: hidden;
+  color: red;
+  font-size: 18px;
+  background-size: 270px;
+}
+.showArea {
+  width: 650px;
+  height: 683px;
+  background: #232425;
+  position: fixed;
+  z-index: 999;
+  top: -1200px;
+}
+.opacity {
+  opacity: 0.2;
+}
+.state1 {
+  background: #a09696;
+}
+.define{
+  z-index: 100;
+  position: absolute;
+  display:none;
+  border-radius: 5px;
+  border: 1px solid #e60012;
+  width: 300px;
+  background:rgba(70, 71, 75, 0.95);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  line-height: 20px;
+}
+.define p{
+  line-height:18px;
+}
+.top-a{
+  top:35px;
+  left:17px;
+}
+.bottom-a{
+  bottom: 30px;
+}
+
+#ticketForm{
+  min-height:554px;
+}
+.justContainer22{
+  display:inline-block;
+}
+.ticketNone{
+  float:right;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.ticketInfo .ticketSelected button.ochox_c{
+  background-color: #a09696;
+}
+.ticketInfo .ticketSelected button.ochox_b{
+  background-color: #e60010;
+}
+.ticketInfo .selectedSeats li.Seat {
+  border: 1px solid #aaaaaa;
+  color: #c1a643;
+  background: url(../images/close.png) no-repeat 63px -12px;
+}
+.tiJiaoDingDan {
+  position: fixed;
+  bottom: 0;
+  line-height: 52px;
+  width: 77%;
+  padding:0 13%;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top:1px solid #e60012;
+}
+.tiJiaoDingDan .payMoney {
+  margin-left: 56%;
+  font-size: 16px;
+  color: #ffffff;
+  width:400px;
+  text-align:right;
+}
+.tiJiaoDingDan .payMoney i{
+  color:#c1a643;
+  font-size: 20px;
+  position:relative;
+  top:1px;
+}
+.tiJiaoDingDan .payMoney span {
+  position: relative;
+  bottom: -3px;
+  font-size: 24px;
+  color: #c1a643;
+}
+.tiJiaoDingDan button {
+  display: inline-block;
+  margin-left: 50px;
+  width: 100px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: #e60010;
+  color: #ffffff;
+  cursor: pointer;
+  font-size:14px;
+}

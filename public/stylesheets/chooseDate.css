@@ -1,0 +1,229 @@
+@charset "utf-8";
+.clearFix {
+  content: "";
+  display: table;
+  clear: both;
+}
+ul li{
+  list-style: none;
+}
+.main {
+  margin-top: 70px;
+  /*套餐选择控件*/
+}
+.main .selectMeal {
+  width: 1000px;
+  margin: 0 auto;
+}
+.main .menu {
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 378px;
+  height: 295px;
+  overflow: hidden;
+  background-color: rgba(40, 36, 35, 0.9);
+  position: relative;
+  left: -550px;
+}
+.main .menu .left_mealMenu {
+  float: left;
+  width: 88px;
+  height: 295px;
+  margin-right: auto;
+}
+.main .menu .left_mealMenu li:nth-child(2) {
+  margin: 1px 0;
+}
+.main .menu .left_mealMenu li:last-child {
+  margin-top: 1px;
+}
+.main .menu .left_mealMenu li {
+  border-left: 5px solid #c1a643;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  line-height: 73px;
+  list-style: none;
+  background-color: #c1a643;
+  overflow: hidden;
+  cursor: pointer;
+}
+.main .menu .left_mealMenu li.selected {
+  border-left: 5px solid #e60010;
+  background-color: rgba(40, 36, 35, 0.7);
+}
+.main .menu .right_mealMenu {
+  width: 250px;
+  padding: 0 20px;
+  float: right;
+  height: 295px;
+  background-color: rgba(40, 36, 35, 0.7);
+}
+.main .menu .right_mealMenu .right_top_mealMenu {
+  cursor: pointer;
+  text-align: center;
+  line-height: 48px;
+  font-size: 16px;
+  color: #c1a643;
+  border-bottom: 3px solid #c1a643;
+}
+.main .menu .right_mealMenu .triangle {
+  border: 6px solid;
+  border-color: #c1a643 transparent transparent transparent;
+  width: 0;
+  margin-left: 115px;
+}
+.selectDate {
+  padding-top: 16px;
+  line-height: 38px;
+}
+.selectDate span {
+  font-size: 14px;
+  color: #ffffff;
+}
+.selectDate input {
+  height: 36px;
+  width: 170px;
+  margin-left: 5px;
+  background: #ffffff url("../images/calendar_widget.png") no-repeat 150px center;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+.selectMainChar {
+  padding-top: 16px;
+  line-height: 38px;
+}
+.selectMainChar label {
+  font-size: 14px;
+  color: #ffffff;
+}
+.selectMainChar input {
+  height: 36px;
+  width: 170px;
+  margin-left: 19px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  padding-left: 8px;
+}
+.selectTime {
+  vertical-align: middle;
+  padding-top: 16px;
+  line-height: 38px;
+  position: relative;
+}
+.selectTime span:first-child {
+  font-size: 14px;
+  color: #ffffff;
+  float: left;
+  margin-right: 4px;
+}
+.selectTime span.timee > cite {
+  cursor: pointer;
+  line-height: 25px;
+  background: #eeeeee;
+  border-radius: 2px;
+  width: 85px;
+  display: inline-block;
+  text-align: center;
+  margin: 4px;
+  float: left;
+  vertical-align: middle;
+  padding-bottom: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid rgba(40, 36, 35, 0.7);
+}
+.selectTime span.timee > cite.timeSelected {
+  background: #ffffff url("../images/timeSelected.png") no-repeat top right;
+  border: 1px solid #e60010;
+  color: #e60010;
+}
+.search {
+  position: absolute;
+  top: 235px;
+  left: 245px;
+  background: #e60010;
+  color: #ffffff;
+  width: 112px;
+  height: 43px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.calendar{
+  float:right;
+}
+.calendar em{
+  margin-top:0 !important;
+}
+/*日历控件*/
+.time { width:300px;  min-height: 300px; margin:10px auto 0 auto; font-size:12px;
+  z-index:9999;background-color: #454545;position:relative;top:-224px;left:-312px;cursor: default;}
+.time ul.timehead{ overflow:hidden;margin-left:10px;}
+.time ul.timehead li{float:left; color:#848789;padding:1px;}
+.calander ul{width:210px; margin:0 auto;overflow:auto;margin-bottom:5px;}
+.choosePera:before{content:"鍦烘";    float: left;
+  height: 40px;
+  line-height: 25px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #00B9DD;}
+#choosePer dd:hover{background-color:#64A3F3; color:#fff;}
+#choosePer dd{ text-align:center;color:#fff;background-color: #FFAF00;margin-left:20px; height:25px; line-height:25px;width:50px;margin-bottom:4px;  text-indent: 0px;}
+.calendar ul li{text-align:center;float:left; width:38px; height:38px; line-height:40px; vertical-align: middle; font-size:12px;cursor: default;}
+.daystyle li:hover{background-color:#626EE8;}
+/* .show{background-color:#ABBDD2;} */
+.show{background-color:#E1EDFB;}
+.show {
+  background-color: #978a5a;
+  color: #fff;
+}
+/* .pitch{background-color:#626EE8;color: #fff;} */
+.pitch{background-color: #626EE8;color: #fff;}
+/* .day_befor {background-color:#fff;}*/
+.day_befor {background-color:rgb(227, 228, 234);}
+.day_befor {background-color:#333435;color:#fff;}
+.pitch_today{background-color:#9BEAF9;}
+#pre,#next{font-weight: bold;padding:0px;border-radius: 4px;height: 25px;width: 25px;background-color:#e60010;font-size:16px;}
+#pre{margin-right: 60px;margin-bottom:6px;}
+#next{margin-left:60px;margin-bottom:6px;}
+#pre:hover,#next:hover,.show:hover{cursor: pointer;background-color:#e60010;color:#fff;}
+div.obackground{    color: #666;margin:10px 10px 0px;line-height:40px;}
+div.obackground *{font-size:14px;}
+div.obackground>span:first-child { padding: 5px 10px;background-color: #D1D1D1;  vertical-align: top;}
+div.obackground>span:nth-child(2) {padding-left:10px;}
+.obackgroun-span{display:inline-block;width:170px;}
+.obackgroun-span>span{display:inline-block;width:100%;}
+u.obackgroun-span{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;vertical-align: top;}
+.obackgroun-span u{    text-decoration: blink;  display: inline-block;width: 125px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;vertical-align: top;}
+#calendar{
+  margin-left:10px;
+}
+#calendar li{
+  margin:1px;
+}
+div.tuLi{
+  clear:both;
+  background:#1d1e1f;
+  color:#979797;
+  height:33px;
+  position: relative;
+  bottom: -10px;
+}
+div.tuLi ul li{
+  width:75px;
+  line-height:30px;
+}
+#showCalander span{
+  color:#fff;
+  font-size:16px;
+}
+.goWhere{
+  display: inline-block;
+  width: 119px;
+  margin: 0 2px;
+}
