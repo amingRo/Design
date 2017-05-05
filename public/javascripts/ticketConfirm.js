@@ -2,6 +2,11 @@
  * Created by amingRo on 2017/4/1.
  */
 $(function(){
+    //登陆跳转
+    $(".myOrder").click(function () {
+        window.location.href = "http://localhost:3000/login"
+    })
+
     $(".payMoney span").html("￥"+$.session.get("cTotal"));
     $("html,body").animate({scrollTop:$(".packageInfo").offset().top},1000);
 });

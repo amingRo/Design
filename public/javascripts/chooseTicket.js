@@ -68,6 +68,11 @@ function getShowSeatList (v) {
 }
 
 $(function () {
+    //登陆跳转
+    $(".myOrder").click(function () {
+        window.location.href = "http://localhost:3000/login"
+    })
+
     //刷新右上角信息
     $(".time:first").text($.session.get("showTime"));
     $(".time:last").text(JSON.parse($.session.get("areaSelect")).areaName);

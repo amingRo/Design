@@ -17,5 +17,10 @@ router.get('/confirmPackage.exe', function(req, res, next) {
 router.get('/paySuccess.exe', function(req, res, next) {
     res.render('paySuccess', { title: '万达主题娱乐中央预定系统' });
 });
-router.get('/user/:username')
+router.get('/login',function (req, res, next) {
+    res.render('login')
+})
+// router.get("/users/:username",function (req, res) {
+//     res.send("user:" + req.params.username);
+// })
 module.exports = router;

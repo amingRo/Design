@@ -6,6 +6,10 @@
     var endTime = parseInt(new Date().getTime()+timeLimit);
 
 $(function () {
+    //登陆跳转
+    $(".myOrder").click(function () {
+        window.location.href = "http://localhost:3000/login"
+    })
     //倒计时开始
     var timeBegin = setInterval(function () {
          $(".countdown").html((new Date(endTime - new Date().getTime()).toLocaleTimeString()).substr(-5))

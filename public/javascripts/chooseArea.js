@@ -1,4 +1,9 @@
 $(function () {
+    //登陆跳转
+    $(".myOrder").click(function () {
+        window.location.href = "http://localhost:3000/login"
+    })
+
     $.each(JSON.parse($.session.get("areaData")).areaInfo,function(i,item){
         $(".area"+item.smallAreaId).attr({"performanceId":item.performanceId,"areaId":item.smallAreaId,"class":"area"+item.smallAreaId+" yes"+item.smallAreaId});
     });

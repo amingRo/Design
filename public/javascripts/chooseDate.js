@@ -12,4 +12,9 @@ $(function () {
     $("#selectDate").click(function () {
         $("#showCalander").toggle();
     });
+    //登陆跳转
+    $(".myOrder").click(function () {
+        window.location.href = "http://localhost:3000/login"
+    })
+
 });
