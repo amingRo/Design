@@ -7,8 +7,13 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var dataHandle = require('./routes/dataHandle')
 var app = express();
+
+
+// 创建 application/x-www-form-urlencoded 编码解析
+var urlencodedParser = bodyParser.urlencoded({extended:false})
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views')); 

@@ -5,6 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: '万达主题娱乐中央预定系统' });
 });
+
 router.get('/chooseArea.exe', function(req, res, next) {
     res.render('chooseArea', { title: '万达主题娱乐中央预定系统' });
 });
