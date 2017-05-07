@@ -1,0 +1,57 @@
+.loginDiv{
+    height: 340px;
+    width: 500px;
+    background: #FFFFFF;
+    margin: 75px auto 0 auto;
+    border-top:4px solid #00B9DD;
+}
+.loginDiv h3{
+    font-size: 16px;
+    text-decoration: blink;
+    color: #FFF;
+    line-height: 32px;
+    width: 185px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(../images/qiehuan_04.png) no-repeat;
+    text-indent: -150px;
+}
+.loginDiv p{
+    padding-left: 25px;
+    margin: 35px 20px 0 20px;
+    font-size: 14px;
+    color: #333;
+    line-height: 40px;
+}
+.loginDiv p label{
+    width: 100px;
+    display: inline-block;
+    font-size: 14px;
+}
+.loginDiv p input{
+    width: 260px;
+    height: 30px;
+    border: none;
+    background-color: #f2f2f2;
+    vertical-align: middle;
+    padding-left: 8px;
+    font-size: 14px;
+}
+.loginDiv p button{
+    cursor: pointer;
+    margin-left: 0px;
+    width: 130px;
+    font-size: 12px;
+    background-color: #FCAF02;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    border: none;
+    color: #FFF;
+}
+.loginDiv p button:first-child{
+    margin-right: 140px;
+}
+
+
+
