@@ -26,7 +26,7 @@ $(function () {
         $.session.set("areaSelect",JSON.stringify({areaid:$(this).attr("areaid"),areaName:$(this).attr("data-areaname")}));
         $.ajax({
             type: "post",
-            url: "/ticketQuery",
+            url: "/data/ticketQuery",
             data: {
                 performanceId: $(this).attr("performanceId"),
                 areaId: $(this).attr("areaId"),

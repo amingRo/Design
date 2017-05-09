@@ -31,7 +31,7 @@ var calanderObj ;
 function showPerformanceDate(obj) {
     calanderObj = document.getElementById("selectDate");
     $.ajax({
-        url: "/showPerformanceDate",
+        url: "/data/showPerformanceDate",
         // 数据发送方式
         type: "post",
         data: {
@@ -116,7 +116,7 @@ function changeCalander(obj) {
     }
     console.log(currentMonthDate.format("yyyy-MM-dd"));
     $.ajax({
-        url: "/subcalandar/data/index",
+        url: "/data/subcalandar/data/index",
         // 数据发送方式
         type: "post",
         // 接受数据格式
@@ -179,7 +179,7 @@ function queryPerformanceDate(showDate){
     $.ajax({
         type: "post",
         // url : basePath+"/ticket/getPerformances?showDate="+showDate,   showDate是当前日期
-        url: "/process_get",
+        url: "/data/process_get",
         dataType : "json",
         success:function(cmd){
             if(cmd.success=="false"){
@@ -236,7 +236,7 @@ function queryAreaList (obj,reservedAreaId) {
     $.ajax({
         type  : "POST",
         // url   : basePath+"/order/choose/getSeatAmountArea", //获取分区列表
-        url:"/areaListQuery",
+        url:"/data/areaListQuery",
         data:{
             "performanceId" : $("#idPerformance").val(), //演出场次
             // "showTime" : $("#showTime").val() //演出时间

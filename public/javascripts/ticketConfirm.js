@@ -206,7 +206,7 @@ function confirmToOrderCommit(obj) {
     // clearOnClick(obj);
     $.ajax({
         type:"POST",
-        url: "/ticket/order/createOrder",
+        url: "/data/ticket/order/createOrder",
         // 数据发送方式
         data: $("#orderForm").serialize(),
         // 接受数据格式

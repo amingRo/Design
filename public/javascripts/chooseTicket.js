@@ -24,7 +24,7 @@ function fn_getTotal(){
 function chooseSeat () {
     $.ajax({
         type  : "POST",
-        url   : "/seatQuery",
+        url   : "/data/seatQuery",
         data:{
             "performanceId" : JSON.parse($.session.get("areaData")).areaInfo[0].performanceId,
             "areaId" : JSON.parse($.session.get("areaSelect")).areaid
@@ -343,7 +343,7 @@ function submit (obj) {
     })
     $.session.set("selectedTicketInfo",JSON.stringify(seats));
     $.session.set("selectedSeatInfo",JSON.stringify(seatList));
-    window.location.href = "confirmPackage.html";
+    window.location.href = "confirmPackage";
     // $("#seats").val(encodeURI(JSON.stringify(seats)));
     // console.log($("#seats").val(encodeURI(JSON.stringify(seats))))
     // $.ajax({
