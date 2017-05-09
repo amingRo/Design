@@ -1,0 +1,28 @@
+.dataContainer{
+    width: 1000px;
+    min-height: 500px;
+    background: #FFFFFF;
+    margin: 75px auto auto auto;
+}
+.dataContainer table {
+    width: 100%;
+}
+.dataContainer table thead td{
+    width: 200px;
+    text-align: center;
+    height: 45px;
+    background: #949494;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.dataContainer table tr{
+    background: rgba(193, 166, 67, 0.7);
+    height: 40px;
+    text-align: center;
+}
+.dataContainer table tr button{
+    padding: 5px 10px;
+    background: #ffaf00;
+    border-radius: 4px;
+    cursor: pointer;
+}
