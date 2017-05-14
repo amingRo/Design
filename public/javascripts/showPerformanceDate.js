@@ -54,12 +54,7 @@ function showSubCalander (data) {
     var year = data.currentYear;
     var month = data.currentMonth;
     var currentDate = new Date(year, month-1, 1);
-    // $("#currentDate").val(currentDate.format("yyyy-MM-dd"));     日期选择栏上方的隐藏域
-    // var _limitTime = parseInt($("#initDate").val());             页面上未找到此元素
     var _currentTime = new Date().getTime();
-    // if(_limitTime>_currentTime){
-    //     _currentTime = _limitTime;                               比较未明确意义
-    // }
     var _d = new Date(_currentTime);
     $("#showCalander").find("span").html(year + "年" + month + "月");
     var calendarHead = $("#showCalander").find("ul[id='calendarHead']");

@@ -2,7 +2,15 @@ var express = require('express');
 var app = express();
 var bodyParser = require("body-parser");
 var router = express.Router();
+var MongoStore = require('connect-mongo');
+var settings = require('../Settings');
 
+app.use(express.session({
+    secret:settings.cookieSecret,
+    store:new MongoStore({
+        db:settings.db
+    })
+}));
 // 创建 application/x-www-form-urlencoded 编码解析
 app.use(bodyParser.urlencoded({extended:false}))
 

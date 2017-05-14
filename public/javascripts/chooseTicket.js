@@ -143,7 +143,7 @@ $(function () {
     $(".littleArea" + JSON.parse($.session.get("areaSelect")).areaid).removeClass("opacity");
     //右下侧选区图弹出特效相关逻辑
     $("#preView").click(function () {
-        $(".area"+$.session.get("areaSelect")).removeClass("opacity");
+        $(".area"+JSON.parse($.session.get("areaSelect")).areaid).removeClass("opacity");
         if($(".showArea").css("top") == "-1200px"){
             $(".showArea").animate({top:"-70px"});
         }else {
@@ -344,26 +344,4 @@ function submit (obj) {
     $.session.set("selectedTicketInfo",JSON.stringify(seats));
     $.session.set("selectedSeatInfo",JSON.stringify(seatList));
     window.location.href = "confirmPackage";
-    // $("#seats").val(encodeURI(JSON.stringify(seats)));
-    // console.log($("#seats").val(encodeURI(JSON.stringify(seats))))
-    // $.ajax({
-    //     type: "post",
-    //     url : "/ticketConfirm",
-    //     data :$("#ticketForm").serialize(),
-    //     dataType : "json",
-    //     success:function(cmd){
-    //         if(cmd.status=="fail"){
-    //             alert("操作失败！");
-    //         } else if(cmd.status=="success"){
-    //             window.location.href = cmd.address;
-    //         } else{
-    //             alert("网络繁忙.");
-    //             return;
-    //         }
-    //     },
-    //     error : function (){
-    //         alert("网络繁忙.");
-    //         return;
-    //     }
-    // });
 }
