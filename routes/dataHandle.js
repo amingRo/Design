@@ -2,10 +2,12 @@ var express = require('express');
 var app = express();
 var bodyParser = require("body-parser");
 var router = express.Router();
-var MongoStore = require('connect-mongo');
+var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
 var settings = require('../Settings');
 
-app.use(express.session({
+
+app.use(session({
     secret:settings.cookieSecret,
     store:new MongoStore({
         db:settings.db

@@ -2,6 +2,7 @@
  * Created by amingRo on 2017/5/14.
  */
 var mongodb = require('./db');
+var session = require('express-session');
 
 function User(user) {
     this.name = user.name;
@@ -60,4 +61,4 @@ User.get = function (username, callback) {
             });
         });
     });
-};
+}
