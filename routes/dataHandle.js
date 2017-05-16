@@ -5,17 +5,24 @@ var router = express.Router();
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var settings = require('../Settings');
-
+var session = require('express-session');
+var mongodb = require('./../models/db');
 
 app.use(session({
     secret:settings.cookieSecret,
     store:new MongoStore({
-        db:settings.db
+        db:settings.db,
+        host:settings.host,
+        port:settings.port,
+        url:settings.url
     })
 }));
 // 创建 application/x-www-form-urlencoded 编码解析
 app.use(bodyParser.urlencoded({extended:false}))
 
+function Data() {
+
+}
 //首页选项卡数据
 router.post('/process_get',function (req, res) {
     // console.log("eeeeeeeeeeeeeeee");
@@ -34,177 +41,31 @@ router.post('/process_get',function (req, res) {
 })
 //日历数据
 router.post('/showPerformanceDate',function (req, res) {
-    response = {
-        currentYear:"2017",
-        currentMonth:"02",
-        data:[
-            {
-                "count": 0,
-                "date": "",
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": "",
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1485878400191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1485964800191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486051200191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486137600191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486224000191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486310400191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486396800191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486483200191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486569600191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486656000191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486742400191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486828800191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1486915200191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487001600191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487088000191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487174400191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487260800191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487347200191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487433600191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487520000191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487606400191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487692800191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487779200191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487865600191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1487952000191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1488038400191,
-                "performances": []
-            },
-            {
-                "count": 0,
-                "date": 1488124800191,
-                "performances": [
-                    {
-                        "endTime": "2017-02-27 21:30",
-                        "numTicket": "118",
-                        "performanceId": "1971",
-                        "startTime": "2017-02-27 20:15"
-                    }
-                ]
-            },
-            {
-                "count": 0,
-                "date": 1488211200191,
-                "performances": [
-                    {
-                        "endTime": "2017-02-28 21:30",
-                        "numTicket": "101",
-                        "performanceId": "1972",
-                        "startTime": "2017-02-28 20:15"
-                    }
-                ]
+    mongodb.open(function (err, product) {
+        if(err){
+            console.log("aaaaaaaaaaa");
+            return
+        }
+        product.collection('playDate' +
+            '',function (err, collection) {
+            if(err){
+                console.log("bbbbbbbbbbb");
+                return
             }
-        ]
-    }
-    res.send(JSON.stringify(response));
+            collection.findOne({"_id": "591ac91810fae122fc607ede"},function (err, doc) {
+                mongodb.close();
+                if(err){
+                    console.log("cccccccccc");
+                }
+                console.log(doc);
+                console.log("eeee");
+                res.send(JSON.stringify(doc));
+            })
+
+        })
+    })
+    // response =
+    // res.send(JSON.stringify(response));
 })
 //抛回场次查询数据
 router.post('/areaListQuery',function (req, res) {

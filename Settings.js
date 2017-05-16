@@ -3,6 +3,8 @@
  */
 module.exports = {
     cookieSecret:"myDesign",
-    db:"Design",
-    host:"localhost"
+    db:"users",
+    host:"localhost",
+    port:"27017",
+    url:"mongodb://localhost:27017"
 }

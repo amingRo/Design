@@ -51,11 +51,13 @@ function showPerformanceDate(obj) {
 }
 
 function showSubCalander (data) {
+    console.dir(data);
     var year = data.currentYear;
     var month = data.currentMonth;
     var currentDate = new Date(year, month-1, 1);
     var _currentTime = new Date().getTime();
     var _d = new Date(_currentTime);
+    // console.log(_d);
     $("#showCalander").find("span").html(year + "年" + month + "月");
     var calendarHead = $("#showCalander").find("ul[id='calendarHead']");
     var calendar = $("#showCalander").find("ul[id='calendar']");
@@ -74,6 +76,7 @@ function showSubCalander (data) {
                 $.each(itemCal.performances, function(index, it) {
                     if (pdate == "") {
                         pdate = pdate + it.startTime.split(" ")[0];
+                        console.log(it.startTime.split(" ")[0]);
                     }
                 });
                 var content ="";
