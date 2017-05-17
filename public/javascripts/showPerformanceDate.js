@@ -174,6 +174,7 @@ function queryPerformanceDate(showDate){
     $("#showTime").val("");
     $("#idPerformance").val("");
     $(".timee").html("");
+    $("#showCalander").css("display","none");
     $.ajax({
         type: "post",
         // url : basePath+"/ticket/getPerformances?showDate="+showDate,   showDate是当前日期
@@ -185,21 +186,24 @@ function queryPerformanceDate(showDate){
                 alert(cmd.message);
                 return;
             } else if(cmd.success=="true"){
+                var j = 0;
                 $(".timee").html("");
                 // $("#idPerformance").val("");隐藏域
                 var _html="";
                 $(cmd.performanceList).each(function(i,item){
-                    var _performanceId = item["performanceId"];
-                    var _showDate = item["startTime"].substring(0, 10);
-                    var _performanceName = item["startTime"].substring(11, 16);
-                    var _style = "";
-                    if (i == 0) {
-                        _style = " class='timeSelected' ";
-                        $("#idPerformance").val(_performanceId);
-                        $("#showTime").val(item["startTime"]);
-                        $("#selectDate").val(_showDate);
+                    if(item["startDate"] == showDate){
+                        var _performanceId = item["performanceId"];
+                        var _showDate = item["startTime"].substring(0, 10);
+                        var _performanceName = item["startTime"].substring(11, 16);
+                        var _style = "";
+                        if (j++ == 0) {
+                            _style = " class='timeSelected' ";
+                            $("#idPerformance").val(_performanceId);
+                            $("#showTime").val(item["startTime"]);
+                            $("#selectDate").val(_showDate);
+                        }
+                        _html+="<cite "+_style+" data-showTime=\""+item["startTime"]+"\" onclick=\"setPerformanceId('"+_performanceId+"',this)\">"+_performanceName+"</cite>";
                     }
-                    _html+="<cite "+_style+" data-showTime=\""+item["startTime"]+"\" onclick=\"setPerformanceId('"+_performanceId+"',this)\">"+_performanceName+"</cite>";
                 });
                 $(".timee").html(_html);
             } else{
