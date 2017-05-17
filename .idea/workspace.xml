@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e113f94a-6160-4283-9ef8-3a7def575e5e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/db/journal/WiredTigerLog.0000000002" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/WiredTiger.wt" afterPath="$PROJECT_DIR$/data/db/WiredTiger.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/_mdb_catalog.wt" afterPath="$PROJECT_DIR$/data/db/_mdb_catalog.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/collection-0--344991886380624136.wt" afterPath="$PROJECT_DIR$/data/db/collection-0--344991886380624136.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/collection-7--1658030180268102774.wt" afterPath="$PROJECT_DIR$/data/db/collection-7--1658030180268102774.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/index-1--344991886380624136.wt" afterPath="$PROJECT_DIR$/data/db/index-1--344991886380624136.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/mongod.lock" afterPath="$PROJECT_DIR$/data/db/mongod.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/sizeStorer.wt" afterPath="$PROJECT_DIR$/data/db/sizeStorer.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/collection-0-1638997294595895690.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/collection-0-8937643229695565573.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/collection-2-1638997294595895690.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/collection-2-8937643229695565573.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.2017-05-17T02-11-34Z-00000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.2017-05-17T09-27-38Z-00000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/index-1-1638997294595895690.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/index-1-8937643229695565573.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/index-3-1638997294595895690.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/index-3-8937643229695565573.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/journal/WiredTigerLog.0000000004" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Settings.js" afterPath="$PROJECT_DIR$/Settings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/WiredTiger.turtle" afterPath="$PROJECT_DIR$/data/db/WiredTiger.turtle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/showPerformanceDate.js" afterPath="$PROJECT_DIR$/public/javascripts/showPerformanceDate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/dataHandle.js" afterPath="$PROJECT_DIR$/routes/dataHandle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -569,7 +567,7 @@
       <workItem from="1494846649344" duration="1397000" />
       <workItem from="1494848482562" duration="9553000" />
       <workItem from="1494895837014" duration="23000" />
-      <workItem from="1494986747556" duration="15925000" />
+      <workItem from="1494986747556" duration="16010000" />
     </task>
     <task id="LOCAL-00001" summary="测试webstrome">
       <created>1487946064090</created>
@@ -746,11 +744,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494937032159</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="用户界面">
+      <created>1495017901330</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1495017901330</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275593000" />
+    <option name="totallyTimeSpent" value="275678000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -764,13 +769,13 @@
   <component name="ToolWindowManager">
     <frame x="-11" y="35" width="1942" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17550372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17550372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26752338" sideWeight="0.5021209" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.49787912" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22897196" sideWeight="0.49787912" order="7" side_tool="false" content_ui="tabs" x="17" y="428" width="1878" height="270" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22897196" sideWeight="0.49787912" order="7" side_tool="false" content_ui="tabs" x="17" y="428" width="1878" height="270" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
