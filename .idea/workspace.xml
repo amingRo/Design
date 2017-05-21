@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e113f94a-6160-4283-9ef8-3a7def575e5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/collection-0-1638997294595895690.wt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/collection-0-8937643229695565573.wt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/collection-2-1638997294595895690.wt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/collection-2-8937643229695565573.wt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.2017-05-17T02-11-34Z-00000" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.2017-05-17T09-27-38Z-00000" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/index-1-1638997294595895690.wt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/index-1-8937643229695565573.wt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/index-3-1638997294595895690.wt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/index-3-8937643229695565573.wt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/journal/WiredTigerLog.0000000004" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.2017-05-18T07-50-41Z-00000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.2017-05-21T03-27-29Z-00000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/db/journal/WiredTigerLog.0000000006" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/db/journal/WiredTigerLog.0000000004" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/WiredTiger.wt" afterPath="$PROJECT_DIR$/data/db/WiredTiger.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/collection-0--344991886380624136.wt" afterPath="$PROJECT_DIR$/data/db/collection-0--344991886380624136.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/index-1--344991886380624136.wt" afterPath="$PROJECT_DIR$/data/db/index-1--344991886380624136.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/sizeStorer.wt" afterPath="$PROJECT_DIR$/data/db/sizeStorer.wt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/WiredTiger.turtle" afterPath="$PROJECT_DIR$/data/db/WiredTiger.turtle" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,7 +52,7 @@
       <file leaf-file-name="dataHandle.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/dataHandle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
+            <state relative-caret-position="343">
               <caret line="121" column="14" lean-forward="false" selection-start-line="121" selection-start-column="14" selection-end-line="121" selection-end-column="14" />
               <folding />
             </state>
@@ -64,7 +62,7 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
+            <state relative-caret-position="1352">
               <caret line="52" column="80" lean-forward="false" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
               <folding />
             </state>
@@ -74,11 +72,9 @@
       <file leaf-file-name="showPerformanceDate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/showPerformanceDate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
+            <state relative-caret-position="6084">
               <caret line="234" column="15" lean-forward="false" selection-start-line="234" selection-start-column="15" selection-end-line="234" selection-end-column="15" />
-              <folding>
-                <marker date="1495010755714" expanded="true" signature="5082:6956" ph="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,7 +82,7 @@
       <file leaf-file-name="chooseArea.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/chooseArea.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -295,8 +291,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,82 +303,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -567,7 +489,8 @@
       <workItem from="1494846649344" duration="1397000" />
       <workItem from="1494848482562" duration="9553000" />
       <workItem from="1494895837014" duration="23000" />
-      <workItem from="1494986747556" duration="16010000" />
+      <workItem from="1494986747556" duration="16077000" />
+      <workItem from="1495337615022" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="测试webstrome">
       <created>1487946064090</created>
@@ -751,11 +674,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495017901330</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="数据库文件">
+      <created>1495017997529</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1495017997529</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275678000" />
+    <option name="totallyTimeSpent" value="275781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,12 +702,12 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17550372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26752338" sideWeight="0.5021209" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.49787912" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22897196" sideWeight="0.49787912" order="7" side_tool="false" content_ui="tabs" x="17" y="428" width="1878" height="270" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -849,7 +779,8 @@
     <MESSAGE value="生成门票" />
     <MESSAGE value="in SC" />
     <MESSAGE value="用户界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户界面" />
+    <MESSAGE value="数据库文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据库文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -980,9 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <marker date="1494901011913" expanded="true" signature="131:442" ph="{&quot;body-parser&quot;: &quot;~1.17.1&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,7 +966,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
+        <state relative-caret-position="1352">
           <caret line="52" column="80" lean-forward="false" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
           <folding />
         </state>
@@ -1046,17 +974,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/showPerformanceDate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
+        <state relative-caret-position="6084">
           <caret line="234" column="15" lean-forward="false" selection-start-line="234" selection-start-column="15" selection-end-line="234" selection-end-column="15" />
-          <folding>
-            <marker date="1495010755714" expanded="true" signature="5082:6956" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/chooseArea.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1080,7 +1006,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/dataHandle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
+        <state relative-caret-position="343">
           <caret line="121" column="14" lean-forward="false" selection-start-line="121" selection-start-column="14" selection-end-line="121" selection-end-column="14" />
           <folding />
         </state>
