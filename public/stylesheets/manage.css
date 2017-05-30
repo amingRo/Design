@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: #f4f4f4;
+}
+.head2{
+    height: 90px;
+    background: url("../images/top_bg.gif") repeat-x;
+    padding-top: 20px;
+    position: relative;
+}
+.head2 .loginInfo{
+    float: right;
+    margin-right: 50px;
+    color: #FFFFFF;
+}
+.head2 .menuList{
+    list-style: none;
+    position: absolute;
+    top: 25px;
+    left: 280px;
+}
+.head2 ul.menuList li{
+    height: 80px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.head2 ul.menuList li>a{
+    vertical-align: bottom;
+    display: inline-block;
+    padding-top: 60px;
+    color: #FFFFFF;
+    background: url("../images/menu.png") no-repeat;
+}
+.head2 ul.menuList li:first-child a{
+    background-position: -107px 10px;
+}
+.head2 ul.menuList li:first-child:hover a{
+    background-position: -107px -70px;
+}
+.head2 ul.menuList li:nth-child(2) a{
+    background-position: -194px 10px;
+}
+.head2 ul.menuList li:nth-child(2):hover a{
+    background-position: -194px -70px;
+}
+.head2 ul.menuList li:nth-child(3) a{
+    background-position: -280px 10px;
+}
+.head2 ul.menuList li:nth-child(3):hover a{
+    background-position: -280px -70px;
+}
+.head2 ul.menuList li:last-child a{
+    background-position: -375px 10px;
+}
+.head2 ul.menuList li:last-child:hover a{
+    background-position: -375px -70px;
+}
+.head2 ul.menuList li:hover a{
+    color: #3c7ce0;
+}
+.head2 ul.menuList li:hover{
+    background: #FFFFFF;
+}
+.content{
+    height: 82%;
+}
+.addProduct,.delProduct,.oriManger,.findSelf{
+    height: 100%;
+}
+.addProduct{
+}
+.delProduct{
+    background: #FFFFFF;
+    display: none;
+}
+.oriManger{
+    display: none;
+    background: red;
+}
+.findSelf{
+    display: none;
+}
+.content .addProduct .leftModel{
+    width: 40%;
+    border-right: 3px solid;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+.content .addProduct .leftModel ul{
+    position: relative;
+    top: 120px;
+}
+.content .addProduct .leftModel select{
+    width: 163px;
+}
+.content .addProduct .leftModel li{
+    margin: 50px 0;
+}
+.content .addProduct .leftModel li:first-child{
+    margin-top:0 ;
+}
+.content .addProduct .rightModel{
+    background: rgba(40, 36, 35, 0.9);
+    width: 59%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+.content .addProduct .rightModel>p{
+    line-height: 40px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.justChooseSeat {
+    display: inline-block;
+    color: #ffffff;
+    min-height:467px;
+}
+.justChooseSeat .leftSeatMap {
+    display: inline-block;
+    width: 30px;
+    vertical-align: top;
+}
+.justChooseSeat .leftSeatMap ul {
+    list-style: none;
+}
+.justChooseSeat .leftSeatMap ul li {
+    text-align: right;
+    margin-top: 4px;
+}
+.rightSeatMap {
+    display: inline-block;
+    vertical-align: top;
+    overflow-x: auto;
+    width: 564px;
+    padding-bottom: 20px;
+}
+.rightSeatMap ul {
+    list-style: none;
+    text-align: left;
+    margin-left: 10px;
+}
+.rightSeatMap ul li {
+    margin-top: 5px;
+    overflow: hidden;
+    height: 15px;
+    margin-top: 5px;
+}
+.rightSeatMap ul li p {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.kexuan {
+    background: url("../images/kexuan.png") no-repeat;
+    cursor: pointer;
+    background-size:13px 13px;
+}
+.yixuan {
+    background: url("../images/yixuan.png") no-repeat;
+    cursor: pointer;
+    background-size:13px 13px;
+}
+.yishou2 {
+    background: url("../images/yishou2.png") no-repeat;
+    cursor: pointer;
+    background-size:13px 13px;
+}
+.yishou {
+    background: url("../images/yishou.png") no-repeat;
+    cursor: no-drop;
+    background-size:13px 13px;
+}
+ul{
+    list-style: none;
+}
+#selectDate{
+    height: 36px;
+    width: 172px;
+    margin-left: 1px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    padding-left: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.findSelf table {
+    width: 100%;
+}
+.findSelf table thead td{
+    width: 200px;
+    text-align: center;
+    height: 45px;
+    background: #949494;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.findSelf table tr{
+    background: rgba(193, 166, 67, 0.7);
+    height: 40px;
+    text-align: center;
+}
+.findSelf table tr button{
+    padding: 5px 10px;
+    background: #ffaf00;
+    border-radius: 4px;
+    cursor: pointer;
+}

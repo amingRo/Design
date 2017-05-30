@@ -17,7 +17,7 @@
     text-indent: -150px;
 }
 .loginDiv p{
-    padding-left: 25px;
+    padding-left: 15px;
     margin: 35px 20px 0 20px;
     font-size: 14px;
     color: #333;
@@ -52,6 +52,9 @@
 .loginDiv p button:first-child{
     margin-right: 140px;
 }
-
+.loginDiv p span{
+    color: red;
+    display: none;
+}
 
 

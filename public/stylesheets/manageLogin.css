@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: #f4f4f4;
+}
+.header{
+    height: 100px;
+}
+#nowDate{
+    float: right;
+    margin: 65px 50px 0 50px;
+    font-size: 18px;
+}
+.content{
+    background: url("../images/CRS_bg.png") no-repeat;
+    height:450px;
+}
+.content .loginModel{
+    width: 340px;
+    height: 240px;
+    float: right;
+    margin: 80px 80px 0 0;
+}
+.content .loginModel .userName{
+    width: 93%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.content .loginModel .password{
+    width: 93%;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 11px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.content .loginModel #loginIn{
+    width: 97%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    background: #2197de;
+    margin-top: 30px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.footer{
+    line-height: 70px;
+    text-align: center;
+}

@@ -72,7 +72,6 @@ function sendValidatesMsg() {
         // 要传递的数据
         // 回调函数，接受服务器端返回给客户端的值，即result值
         success : validateMsg,
-        error: showError
     });
 }
 function validateMsg(data) {
@@ -200,41 +199,6 @@ function confirmToOrderCommit(obj) {
     // $("#ui_alert_aa").css("display","table");
     // $("#totalPrice").val($('#totalMoney').html());
     $("#personId").val($.trim($("#personId").val()));
-    window.location.href = "paySuccess.html";
-
-
-    // clearOnClick(obj);
-    $.ajax({
-        type:"POST",
-        url: "/data/ticket/order/createOrder",
-        // 数据发送方式
-        data: $("#orderForm").serialize(),
-        // 接受数据格式
-        dataType : "json",
-        // 要传递的数据
-        // 回调函数，接受服务器端返回给客户端的值，即result值
-        success : function(data) {
-            if(data.success=="true"){
-                // window.location.href = data.address+"&isShow=1";
-            } else {
-                $("#codeMsg").html("");
-                $("#validCodeBtn").removeAttr("disabled").css({"background":"#FCAF02"});
-                clearInterval(auto);
-                alert("data.message");
-                if(data.code=="1"){
-                    $('#popup_ok').click(function(){
-                        if(data.code=="1"){
-                            location.href=basePath+"/indexBanNa";
-                        }
-                    });
-                }
-            }
-        },
-        error: showError
-    });
-}
-
-function showError () {
-    // $("#ui_alert_aa").css("display","none");
-    alert("网络繁忙");
+    $.session.set("userInfo",JSON.stringify({"userName":$("#personName").val(),"personId":$("#personId").val(),"personContact":$("#personContact").val()}))
+    window.location.href = "paySuccess";
 }

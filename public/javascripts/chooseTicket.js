@@ -49,22 +49,25 @@ function getShowSeatList (v) {
     $("#pingmu_bian").html("");
     var domm = $("#pingmu_bian_1");
     var dom = $("#pingmu_bian");
-    $.each(v,function(index,entry){
-        index++;
-        domm.append("<li>"+index+"</li>");
-        var liDom=$("<li data-row='"+index+"' style='text-align:center;'></li>");
-        $.each(entry["seats"],function(i,item){
-            if (item["saled"] == 0) {
-                var pDom =$("<p class='kexuan' data-chair='1' seatCode="+item["seatCode"]+" saled="+item["saled"]+"></p>");
-            } else if (item["saled"] == 1) {
-                var pDom =$("<p class='yishou' data-chair='3' seatCode="+item["seatCode"]+" saled="+item["saled"]+"></p>");
-            }else if (item["saled"] == 2) {
-                var pDom =$("<p class='yishou' data-chair='3' seatCode="+item["seatCode"]+" saled="+item["saled"]+"></p>");
-            }
-            liDom.append(pDom);
-        });
-        dom.append(liDom);
-    });
+    $.each(v,function (index, entry) {
+            index++;
+            domm.append("<li>"+index+"</li>");
+            var liDom=$("<li data-row='"+index+"' style='text-align:center;'></li>");
+            $.each(entry["seats"],function(i,item){
+                if (item["saled"] == 0) {
+                    var pDom =$("<p class='kexuan' data-chair='1' seatCode="+item["seatCode"]+" saled="+item["saled"]+"></p>");
+                } else if (item["saled"] == 1) {
+                    var pDom =$("<p class='yishou' data-chair='3' seatCode="+item["seatCode"]+" saled="+item["saled"]+"></p>");
+                }else if (item["saled"] == 2) {
+                    var pDom =$("<p class='yishou2' data-chair='3' seatCode="+item["seatCode"]+" saled="+item["saled"]+"></p>");
+                }
+                liDom.append(pDom);
+            });
+            dom.append(liDom);
+
+
+
+    })
 }
 
 $(function () {
@@ -80,7 +83,6 @@ $(function () {
     (function (ticketInfo) {
         //创建文档碎片
         var oFragment = document.createDocumentFragment();
-        // alert(ticketInfo.length);
         $.each(ticketInfo,function (index, ele) {
             var className = "",tp = "",gq = "";
             if(index%2 === 0){

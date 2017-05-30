@@ -10,6 +10,7 @@ var settings = require('./Settings');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var dataHandle = require('./routes/dataHandle');
+var manager = require('./routes/managers')
 var app = express();
 
 // view engine setup
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use("/data",dataHandle);
+app.use("/manager",manager);
 // catch 404 and forward to eryror handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

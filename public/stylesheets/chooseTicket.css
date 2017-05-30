@@ -572,7 +572,7 @@
   cursor: pointer;
   background-size:13px 13px;
 }
-.yishou {
+.yishou,.yishou2 {
   background: url("../images/yishou.png") no-repeat;
   cursor: no-drop;
   background-size:13px 13px;

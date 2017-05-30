@@ -5,7 +5,9 @@ $(function () {
     })
 
     $.each(JSON.parse($.session.get("areaData")).areaInfo,function(i,item){
+        if(item.performanceId == $.session.get("performanceId")){
         $(".area"+item.smallAreaId).attr({"performanceId":item.performanceId,"areaId":item.smallAreaId,"class":"area"+item.smallAreaId+" yes"+item.smallAreaId});
+    }
     });
 
     //区域动画特效

@@ -235,9 +235,9 @@ function queryAreaList (obj,reservedAreaId) {
         return;
     }
     $.session.set("showTime",$("#showTime").val());
+    $.session.set("performanceId",$("#idPerformance").val());
     $.ajax({
         type  : "POST",
-        // url   : basePath+"/order/choose/getSeatAmountArea", //获取分区列表
         url:"/data/areaListQuery",
         data:{
             "performanceId" : $("#idPerformance").val(), //演出场次

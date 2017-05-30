@@ -4,6 +4,55 @@
 // 倒计时
     var timeLimit = parseInt(15*60*1000);
     var endTime = parseInt(new Date().getTime()+timeLimit);
+//支付页面
+function orderPayes() {
+    var areaSelected = JSON.parse($.session.get("areaSelect"));
+    var performance = $.session.get("performanceId");
+    var seatSelected = $.session.get("selectedSeatInfo");
+    console.log(seatSelected);
+    var ticketSelected = "",
+        ticketNum = 0;
+    $.each(JSON.parse($.session.get("selectedTicketInfo")),function (index, ele) {
+        if(index > 0){
+            ticketSelected += "、"+ele.ticketName;
+        }else {
+            ticketSelected = ele.ticketName;
+        }
+        ticketNum += parseInt(ele.ticketNum);
+    });
+    var showTime = $.session.get("showTime");
+    var userInfo = JSON.parse($.session.get("userInfo"));
+    var totalMoney = $.session.get("cTotal");
+    $.ajax({
+        type:"POST",
+        url:"/data/creatMenu",
+        data:{
+            "performance":performance,
+            "ticketName":ticketSelected,
+            "showTime":showTime,
+            "totalMoney":totalMoney,
+            "ticketNum":ticketNum,
+            "areaSelectNum":areaSelected.areaid,
+            "areaSelectName":areaSelected.areaName,
+            "userName":userInfo.userName,
+            "personId":userInfo.personId,
+            "personContact":userInfo.personContact,
+            "seatSelected":seatSelected
+        },
+        dataType:"json",
+        success:function (data) {
+            $("#submitBtn").text("已支付成功").css("background","#a09696");
+            alert("您已购买成功，订单详情可登陆我的订单查看！");
+        },
+        error:function (err) {
+            alert(err);
+            return
+        }
+    })
+
+}
+
+
 
 $(function () {
     //登陆跳转
@@ -46,13 +95,6 @@ $(function () {
         $(this).addClass("methodSelected").siblings().removeClass("methodSelected")
     });
     //银行卡展开
-    // $(".jianTou").toggle(function () {
-    //     $(this).attr("src","images/button_bottom.png");
-    //     $(this).parent().next().show();
-    // },function () {
-    //     $(this).attr("src","images/button_top.png");
-    //     $(this).parent().next().hide();
-    // })
     $(".fastPay").toggle(function () {
         $(this).find(".jianTou").attr("src","images/button_bottom.png").parent().next().show();
         $("html,body").animate({scrollTop:$(".bankList").offset().top},3000);
